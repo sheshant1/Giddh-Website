@@ -100,8 +100,8 @@ function config(vcRecaptchaServiceProvider, $httpProvider, $authProvider, localS
 }
 
 //run block
-runBlock.$inject = ['$rootScope', '$window'];
-function runBlock($rootScope, $window) {
+runBlock.$inject = ['$rootScope', '$window', '$http', 'localStorageService'];  //, '$q'
+function runBlock($rootScope, $window, $http, localStorageService) {     // $q,
   $rootScope.magicLinkPage = false;
   $rootScope.whiteLinks = false;
   $rootScope.loginPage = false;
@@ -109,7 +109,57 @@ function runBlock($rootScope, $window) {
   $rootScope.fixedHeader = false;
   $rootScope.showBlack = false;
   $rootScope.isNavCollapsed = true;
+  $rootScope.isUae = false;
   
+  // ----------------------------------------------------------
+
+  function isUae() {
+    var VRinUAE = false;
+    var userCountry = localStorageService.get('country_code');
+    // console.log(userCountry);
+
+
+    if (userCountry) {
+      checkUserCountry(userCountry)
+    } else {
+      // console.log('hello');
+      $http.get('https://freegeoip.net/json/').then(function(response){
+        localStorageService.set('country_code', response.data.country_code);
+        checkUserCountry(userCountry);
+      },function(error){
+      console.log("failed to locate users location");
+      });
+    }
+    return VRinUAE;
+  }
+
+  function checkUserCountry(cc) {
+    var userPath = window.location.pathname;    
+    // console.log(userPath);
+    userPath = userPath.split('/');
+    userPath = userPath[1];
+    if (cc === ("AE" || "QA" || "BH" || "OM" || "SA" || "KW")) {
+      if (userPath == 'ae') {
+        return false;
+      } else {
+        return window.location.pathname="/ae";
+      }
+    }
+    else if (userPath != 'ae') {
+      return false;
+      // return window.location.pathname="/";
+    }
+    else {
+      return window.location.pathname="/";
+    }
+  }
+
+
+  if(isUae()){
+    $rootScope.isUae = true;
+  }
+
+  // ----------------------------------------------------------
 
 function isIE() {
     var is_ie, ua;
@@ -118,14 +168,16 @@ function isIE() {
     is_ie = ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1;
     return is_ie;
   };
+  
   $rootScope.browserIE = false;
+  
   if (isIE()) {
     $rootScope.browserIE = true;
     return window.location.pathname = '/IE';
   }
 
   loc = window.location.pathname;
-  if (loc === "/index" || loc === "/") {
+  if (loc === "/index" || loc === "/" || loc === "/ae/") {
     $rootScope.whiteLinks = true;
   }
   if (loc === "security.php") {
@@ -145,7 +197,7 @@ function isIE() {
     }
     
   }
-
+  // console.log($rootScope.);
 
 }
 
