@@ -171,10 +171,16 @@ function isIE() {
   
   $rootScope.browserIE = false;
   
-  if (isIE()) {
-    $rootScope.browserIE = true;
-    return window.location.pathname = '/IE';
+  var storage_isIE = localStorageService.get('isIE');
+  
+  if (!storage_isIE) {
+    if (isIE()) {
+      $rootScope.browserIE = true;
+      return window.location.pathname = '/incompatible-browser.html';
+      localStorageService.set('isIE', true);
+    }    
   }
+
 
   loc = window.location.pathname;
   if (loc === "/index" || loc === "/" || loc === "/ae/") {
