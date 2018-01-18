@@ -173,6 +173,7 @@ function isIE() {
   
   var storage_isIE = localStorageService.get('isIE');
   
+
   if (!storage_isIE) {
     if (isIE()) {
       $rootScope.browserIE = true;
