@@ -161,25 +161,36 @@ function runBlock($rootScope, $window, $http, localStorageService) {     // $q,
 
   // ----------------------------------------------------------
 
-function isIE() {
-    var is_ie, ua;
-    ua = navigator.userAgent;
-    /* MSIE used to detect old browsers and Trident used to newer ones */
-    is_ie = ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1;
-    return is_ie;
-  };
-  
-  $rootScope.browserIE = false;
-  
-  var storage_isIE = localStorageService.get('isIE');
-
-  if (!storage_isIE) {
-    if (isIE()) {
-      $rootScope.browserIE = true;
-      return window.location.pathname = '/incompatible-browser.html';
-      localStorageService.set('isIE', true);
-    }    
+  function isMagicPage() {
+    var magicPageIdx = window.location.href.indexOf('/magic?id=');
+    return (magicPageIdx !==  -1) ? true : false;
   }
+
+  if (!isMagicPage()) {
+    function isIE() {
+      var is_ie, ua;
+      ua = navigator.userAgent;
+      /* MSIE used to detect old browsers and Trident used to newer ones */
+      is_ie = ua.indexOf('MSIE ') > -1 || ua.indexOf('Trident/') > -1;
+      return is_ie;
+    };
+    
+    $rootScope.browserIE = false;
+  
+    var ieInStorage = localStorageService.get('isIE');
+
+    if (!ieInStorage) {
+      if (isIE()) {
+        $rootScope.browserIE = true;
+        return window.location.pathname = '/incompatible-browser.html';
+        localStorageService.set('isIE', true);
+      }    
+    }
+
+  }
+
+    
+
 
 
   loc = window.location.pathname;
