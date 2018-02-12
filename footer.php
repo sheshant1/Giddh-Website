@@ -23,7 +23,13 @@
               <i class="glyphicon glyphicon-phone"></i><a class="font-black" href="tel:08033037089">080 33 03 7089</a>
               <!-- <i class="glyphicon glyphicon-phone"/><a class="font-black" href="tel:18003131911">1800-3131-911 (toll free)</a> -->
             </p>
-            <div id="farzi"></div>
+          <ul class="app_download">
+            <h3>Download App</h3>
+            <li><a href="https://s3.ap-south-1.amazonaws.com/giddhbuildartifacts/giddh-app-6.4.0.dmg" target="_Blank"><i class="fab fa-apple"></i></a></li>
+
+            <li><a href="https://s3.ap-south-1.amazonaws.com/giddhbuildartifacts/giddh-app+Setup+6.4.0.exe" target="_Blank"><i class="fab fa-windows"></i></a></li>
+          </ul>
+            <div id="farzi" class="visible-md-block visible-lg-block"></div>
           </div>
           <div class="col-md-5 col-md-offset-2" ng-if="vm.formSubmitted">
             <h4 class="headerline">{{responseMsg}}</h4>

@@ -23,39 +23,62 @@
 
   <!-- end navigation -->
 
-  <section id="videoBg" class="pr black-back">
+  <section id="videoBg" class="pr black-back hide-xs">
     <div class="scroll-btn">
       <a href="#feature" class="page-scroll"></a>
     </div>
     <div class="intro home">
 
-      <vid-bg resources="vm.videoObj.resources" poster="vm.videoObj.poster" full-screen="vm.videoObj.fullScreen" muted="vm.videoObj.muted" z-index="vm.videoObj.zIndex" play-info="vm.videoObj.playInfo" pause-play="vm.videoObj.pausePlay" class="visible-md-block visible-lg-block"></vid-bg>
-      <!-- hidden-md hidden-xs hidden-sm -->
-
-      <!-- banner content -->
-      <div class="intro-body">
-        <div class="container adjust-width">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="pr clearfix">
-                <div class="brand-wrap">
-                  <div class="brand-heading arvo">
-                    <div class="pr">
-                      <label>An</label><h1> accounting software</h1> <label> that meets your cash flow,  invoicing and basic business needs.</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <a href="signup.php" class="btn btn-primary  btn-lg">Start Today - it's free!</a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="col-md-6 col-xs-12 col-sm-6 height100 bg_light_blue intro_col pr">
+        <div class="introHead pr"><h1 class="text-right text_blue intro_title clearfix pr">TALLY</h1> <img src="assets/images/plus_icon.png" alt="accounting" class="plus_ico" /></div>
+        <div class="clearfix text-right vtext_middle">
+          <div class="middle_cell">
+          <h3>Graphs, Analytics,</h3>
+          <h3>Alerts, Automations and more...</h3>
+        </div>
+        </div>
+        <div class="col-md-8 center-block mrT6 pdT2">
+          <img src="assets/images/tally.png" class="img-responsive" alt="accounting" />
+          <span class="img_plane"></span>
         </div>
       </div>
+
+      <div class="col-md-6 col-xs-12 col-sm-6 height100 bg_dark_blue intro_col">
+        <h1 class="text-left intro_title witClr">GIDDH</h1>
+
+        <div class="clearfix text-left vtext_middle">
+          <div class="middle_cell">
+            <a class="btn btn-primary btn-lg" href="http://faq.giddh.com/tally/how-to-sync-your-data-from-tally-to-giddh" target="_blank">How it works</a>
+          </div>
+        </div>
+        <div class="col-md-8 center-block mrT6 pdT2">
+          <img src="assets/images/giddh_dashboard.png" class="img-responsive" alt="accounting" />
+        </div>
+      </div>
+
     </div>
 
   </section> <!-- end of videoBg -->
+
+
+<!--   <section class="pr black-back hide-sm">
+    <div class="scroll-btn">
+      <a href="#feature" class="page-scroll"></a>
+    </div>
+    <div class="intro home">
+
+      <div class="col-xs-10 center-block">
+        <img src="assets/images/giddh_dashboard.png" class="img-responsive" alt="accounting" /> 
+      </div>
+
+      <div class="col-xs-10 center-block">
+        <img src="assets/images/tally.png" class="img-responsive" alt="accounting" />
+      </div>
+
+    </div>
+
+  </section> -->
+
 
   <section class="blueBg homeContent" id="feature">
     <div class="container adjust-width">
