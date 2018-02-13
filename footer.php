@@ -24,7 +24,7 @@
               <!-- <i class="glyphicon glyphicon-phone"/><a class="font-black" href="tel:18003131911">1800-3131-911 (toll free)</a> -->
             </p>
           <ul class="app_download">
-            <h3>Download App</h3>
+            <h3>Desktop App</h3>
             <li><a href="https://s3.ap-south-1.amazonaws.com/giddhbuildartifacts/giddh-app-6.4.0.dmg" target="_Blank" title="mac os"><i class="fab fa-apple"></i></a></li>
 
             <li><a href="https://s3.ap-south-1.amazonaws.com/giddhbuildartifacts/giddh-app+Setup+6.4.0.exe" target="_Blank" title="windows"><i class="fab fa-windows"></i></a></li>
