@@ -924,11 +924,11 @@ body.light .navbar.transparent{
   color: #011F39;
 }
 .intro.home .btn{
-  font-size: 22px;
-  border-radius: 4px;
-  padding: 7px 18px;
-  background: #ff5f00;
-  font-family: 'Roboto', sans-serif;
+  width: 320px;
+  height: 80px;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 60px;
 }
 .brand-wrap{
 	/*background: url('/assets/images/new/banner-graph.png') no-repeat center center scroll;
@@ -1059,6 +1059,9 @@ figure h1{margin-bottom:5px;}
 @media(min-width:768px) {
   .intro {
     padding: 0;
+  }
+  .hide-sm {
+    display: none;
   }
 }
 
@@ -2061,6 +2064,10 @@ button.toast-close-button {
   vertical-align: middle;
   display: table-cell;
 }
+.middle_cell h3 {
+  font-size: 21px;
+  margin: 0;
+}
 .introHead .plus_ico {
   width: 35px;
   position: absolute;
@@ -2071,7 +2078,7 @@ button.toast-close-button {
   z-index: 1;
 }
 .app_download {
-  margin: 7px 0;
+  margin: 7px 0 30px;
   padding: 0
 }
 .app_download h3 {
@@ -2084,9 +2091,9 @@ button.toast-close-button {
 }
 .app_download li a {
     border: 1px solid #CC3F1C;
-    font-size: 17px;
+    font-size: 24px;
     color: #fff;
-    padding: 7px 9px;
+    padding: 6px 8px;
     border-radius: 2px;
     background: #cc3f1c;
     transition: all 0.2s ease-in;
@@ -2098,6 +2105,32 @@ button.toast-close-button {
   border-color: #bc1d07;
   background: #e44a27;
   color: #fff;
+}
+
+
+#footer {
+  margin-top: -20px;
+}
+.w100 {
+  width: 100%;
+}
+.tally_page .navbar-custom .navbar-nav > li > a{
+    color: #fff;
+}
+.btn-space {
+  padding: 9px 24px;
+  border-radius: 3px;
+}
+.tally_page .navbar-custom.affix .navbar-nav > li > a {
+  color: #26263A;
+}
+.btn-medium {
+  font-size: 22px;
+  border-radius: 4px;
+  padding: 7px 18px;
+  background: #ff5f00;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (max-width: 991px) {
@@ -2136,5 +2169,8 @@ button.toast-close-button {
   }
   .hide-xs {
     display: none;
+  }
+  .hide-sm {
+    display: block;
   }
 }
