@@ -18,7 +18,7 @@
   <ng-include src="'header.html'"></ng-include>
 
   <section id="" class="pr black-back hide-xs">
-    <div class="home">
+    <div class="home vh100">
       <div class="col-md-6 col-xs-12 col-sm-6 height100 bg_light_blue intro_col pr">
         <div class="introHead pr"><h1 class="text-right text_blue intro_title clearfix pr">TALLY</h1> <img src="assets/images/plus_icon.png" alt="accounting" class="plus_ico" /></div>
         <div class="clearfix text-right vtext_middle">

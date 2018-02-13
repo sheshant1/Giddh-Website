@@ -2174,3 +2174,6 @@ button.toast-close-button {
     display: block;
   }
 }
+.vh100 {
+  height: 100vh;
+}
