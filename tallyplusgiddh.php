@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="en" ng-app='giddhWebsite'>
 <head>
-  <meta name="description" content="Giddh, the best online accounting and bookkeeping software. An accounting software to provide you an outstanding solution for business accounting management"/>
-  <meta name="keywords" content="bookkeeping software, Accounting softwares, best accounting software"/>
-  <title>Giddh ~ Accounting at its Rough! Bookkeeping and Accounting Software</title>
+  <meta name="description" content="It’s easy to integrate Tally Solutions with Giddh accounting software, now you may easily manage your accounting needs Online. Easy and Secure way for analysis of alerts, graphs and much more. Enhance your experience with Giddh’s Tally Addon."/>
+  <meta name="keywords" content="Tally, Tally Solutions, Tally Accounting Software"/>
+  <title>Integrate Tally Solutions with Giddh Accounting Software</title>
   <?php include 'head.php';?>
 </head>
 <!-- {oh:geo.country != 'IN'} -->
