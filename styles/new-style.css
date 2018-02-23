@@ -22,22 +22,22 @@ a.anchBtn {
 }
 /*typography styles*/
 .arvo, .head3{
-	font-family: 'Arvo', serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
 .arvo-b{
-	font-family: 'Arvo', serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 }
 .inconsolata, body, input, textarea, button, select{
-	font-family: 'Inconsolata', Arial, serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
 .inconsolata-b{
-	font-family: 'Inconsolata', Arial, serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 }
-.pClr{color: #EB2508;}
+.pClr{color: #e34b26;}
 .sClr{color: #FFF6E7;}
 .bigger-text{
 	font-size: 4em;
@@ -570,9 +570,9 @@ body.light .navbar.transparent{
 	color:#fff;
     font-size: 18px;
     font-weight: 300;
-    -webkit-text-decoration-color: #E34A26;
-    -moz-text-decoration-color: #E34A26;  /* vendor prefix not required as of V36 */
-    text-decoration-color: #E34A26;
+    -webkit-text-decoration-color: #e34b26;
+    -moz-text-decoration-color: #e34b26;  /* vendor prefix not required as of V36 */
+    text-decoration-color: #e34b26;
 }
 .navbar-custom.affix .navbar-nav > li > a.white{
 	color:#26263A;
@@ -593,7 +593,7 @@ body.light .navbar.transparent{
 }
 
 .navbar-custom .navbar-nav > li > a:after{
-    border-bottom: 1px solid #E34A26;
+    border-bottom: 1px solid #e34b26;
 }
 
 
@@ -604,7 +604,7 @@ body.light .navbar.transparent{
   background: none;
 }
 .btn{
-	border-radius: 0;
+	border-radius: 2px;
 	-webkit-transform: translateZ(0);
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -619,8 +619,8 @@ body.light .navbar.transparent{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .btn-primary {
-	background-color: #E34A26;
-	border-color: #E34A26;
+	background-color: #e34b26;
+	border-color: #e34b26;
 	color: #fff;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
@@ -641,13 +641,13 @@ body.light .navbar.transparent{
 }
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open > .dropdown-toggle.btn-secondary {
 	color: #fff;
-	background-color: #E34A26;
-	border-color: #E34A26;
+	background-color: #e34b26;
+	border-color: #e34b26;
 }
 .btn-secondary:active, .btn-secondary.active {
 	color: #fff;
-	background-color: #E34A26;
-	border-color: #E34A26;
+	background-color: #e34b26;
+	border-color: #e34b26;
 	box-shadow: none;
 }
 
@@ -661,8 +661,8 @@ body.light .navbar.transparent{
   transition: all 0.3s;
 }
 .btn-p-bdr{
-	border: 2px solid #E34A26;
-  color: #E34A26;
+	border: 2px solid #e34b26;
+  color: #e34b26;
   position: relative;
 }
 .btn-p-bdr:after {
@@ -670,7 +670,7 @@ body.light .navbar.transparent{
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #E34A26;
+	background: #e34b26;
 }
 .btn-p-bdr:hover,
 .btn-p-bdr:active {
@@ -852,16 +852,16 @@ body.light .navbar.transparent{
     margin: 0 auto;
 }
 .pricing .brand-heading {
-  font-size: 40px;
+  font-size: 48px;
   letter-spacing: 2px;
-  margin: 0 0 50px;
+  margin: 40px 0 50px;
   color: #011F39;
+  font-weight: normal;
   line-height: 60px;
 }
 .pricing .brand-heading span{
-	font-family: 'Arvo', serif;
-	font-weight: 700;
-	color: #EB2508
+	font-family: 'Roboto', sans-serif;
+	color: #e34b26
 }
 .pBnrBtm{
 	padding-top: 70px
@@ -873,7 +873,7 @@ body.light .navbar.transparent{
 .pBnrBtm .btn-lg{
 	width: 240px;
 	height: 60px;
-	font-family: 'Arvo', serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 28px;
 	margin-top: -10px;
 }
@@ -881,9 +881,19 @@ body.light .navbar.transparent{
 	border: 0;
 	background-color: transparent;
 }
+.pricing .thumbnail img {
+  max-width: 80px;
+  height: 80px;
+}
 .pricing .thumbnail .caption{
 	text-align: center;
 	color: #FFF6E7
+}
+.pricing .thumbnail .caption h3 {
+  font-weight: 100;
+}
+.pricing h2, .pricing h3 {
+  font-weight: 100;
 }
 #pBtn{
 	width: 180px;
@@ -1100,7 +1110,7 @@ figure h1{margin-bottom:5px;}
 .trBox{border:2px solid #fff; margin:80px 0 10px; padding:5px; display:inline-block}
 .trBox img{width:120px;}
 
-#filling{background:#E34A26; color:#fff; padding:40px 0}
+#filling{background:#e34b26; color:#fff; padding:40px 0}
 #filling .col-sm-6{padding:30px 40px}
 #filling h3{border-bottom:2px solid #fff; display:inline-block; padding:10px; margin-bottom:50px}
 #filling .ic-32{float:left; margin:0 20px 30px 0}
@@ -1122,7 +1132,7 @@ figure h1{margin-bottom:5px;}
 	margin-top: 30px
 }
 #contact{
-	background-color: #E34A26;
+	background-color: #e34b26;
 	padding: 60px 0;
 	font-family: 'Inconsolata', serif;
 	font-weight: 400;
@@ -1131,7 +1141,7 @@ figure h1{margin-bottom:5px;}
 }
 .headerline{
 	font-size: 30px;
-	font-family: 'Arvo', serif;
+	font-family: 'Roboto', sans-serif;
 	color: white;
 }
 #contact p{
@@ -1313,7 +1323,7 @@ footer small a{
 	font-size: 8em;
 	letter-spacing: 5px;
 	line-height: 80px;
-	font-family: 'Arvo', serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	margin-bottom: 30px;
 }
@@ -1333,7 +1343,7 @@ footer small a{
 	font-size: 28px;
 }
 .secBg-five p{
-	color: #EB2508;
+	color: #e34b26;
 	font-size: 30px;
 }
 .secBg-five .btn{
@@ -1802,7 +1812,7 @@ button.toast-close-button {
 }
 .benefits-content h2 {
     margin: 0 0 15px;
-    color: #e34a26;
+    color: #e34b26;
 }
 .benefits-content p {
     font-size: 18px;
@@ -1900,7 +1910,7 @@ button.toast-close-button {
     cursor: pointer;
 }
 .sub_footer {
-  background: #E34A26;
+  background: #e34b26;
   color: #fff;
 }
 .green {
@@ -1986,7 +1996,7 @@ button.toast-close-button {
 .trBox{border:2px solid #fff; margin:80px 0 10px; padding:5px; display:inline-block; transition:.3s all}
 .trBox img{width:120px;}.trBox span{font-size:24px; color:#fff}
 .trBox:hover{background:rgba(256,256,256,.2); text-decoration:none}
-#filling{background:#E34A26; color:#fff; padding:40px 0}
+#filling{background:#e34b26; color:#fff; padding:40px 0}
 #filling .col-sm-6{padding:30px 40px}
 #filling h3{border-bottom:2px solid #fff; display:inline-block; padding:10px; margin-bottom:17px}
 #filling .ic-32{float:left; margin:0 20px 30px 0}
@@ -2133,6 +2143,69 @@ button.toast-close-button {
   font-family: 'Roboto', sans-serif;
 }
 
+#enterprise .inline-text {
+    display: inline;
+    margin: 0;
+    top: 5px;
+    position: relative;
+    font-weight: normal;
+}
+.price_wrapper {
+  margin: 90px 0 0;
+}
+.price_wrapper ul {
+    padding-left: 85px;  
+}
+.price_wrapper h1 small {
+  color: #262639;
+  font-size: 21px;
+  font-weight: normal;
+}
+.price_wrapper ul li {
+  font-size: 21px;
+  font-weight: normal;
+  position: relative;
+  list-style: none;
+}
+.price_wrapper ul li::before {
+  content: "• ";
+  position: absolute;
+  left: -15px;
+  color: #e34b26;
+  top: 2px;
+}
+.price_wrapper ul li small {
+  font-size: 14px;
+  font-weight: normal;
+}
+.price_box {
+  max-width: 325px;
+  margin: 0 auto;
+  position: relative;
+}
+.price_container {
+  position: absolute;
+  width: 290px;
+  top: 68px;
+  right: 0px;
+  transform: rotate(10deg);
+  text-align: center;
+}
+.price_container h1 {
+  color: #fff;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.btn-bdr-whte {
+    border: 2px solid #fff;
+    color: #fff;
+    position: relative;
+}
+.btn-bdr-whte:hover {
+  background: #fff;
+  color: #e34b26;
+}
 @media only screen and (max-width: 991px) {
   .navbar-header {
       float: none;
