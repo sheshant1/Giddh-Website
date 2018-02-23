@@ -108,7 +108,7 @@
             <img src="/assets/images/new/ar-down.png" />
             <div class="clearfix">
                 <div class="ic-32 gidd"></div>
-                <p>Determine & pay the tax amount directly via Giddh <a href="https://giddh.com" title="Accounting Software">Accounting Software</a></p>
+                <p>Determine & pay the tax amount directly via Giddh <a href="https://giddh.com" class="sClr" title="Accounting Software">Accounting Software</a></p>
             </div>
         </div>
     </div>
