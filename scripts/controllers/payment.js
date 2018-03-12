@@ -46,7 +46,8 @@
             return blob;
         };
         $scope.getDetails = function() {
-            return $http.get('/invoice-pay-request/' + data.randomNumber).then(function(response) {
+            var baseUrl = $scope.getApiBaseUrl();
+            return $http.get(baseUrl + 'invoice-pay-request/' + data.randomNumber).then(function(response) {
                 $scope.wlt = response.data.body;
                 $scope.content = "data:application/pdf;base64," + $scope.wlt.content;
                 $scope.pdfFile = $sce.trustAsResourceUrl($scope.content);
@@ -55,6 +56,27 @@
             }, function(error) {
                 return toastr.error(error.data.message);
             });
+        };
+        $scope.getApiBaseUrl = function() {
+            var apiBaseUrl = '';
+            switch (window.location.hostname) {
+                case 'localapp.giddh.com':
+                case 'dev.giddh.com':
+                    apiBaseUrl = 'http://apitest.giddh.com/';
+                    break;
+                case 'test.giddh.com':
+                    apiBaseUrl = 'http://apitest.giddh.com/';
+                    break;
+                case 'stage.giddh.com':
+                    apiBaseUrl = 'http://spi.giddh.com/';
+                    break;
+                case 'giddh.com':
+                    apiBaseUrl = 'https://api.giddh.com/';
+                    break;
+                default:
+                    apiBaseUrl = 'http://apidev.giddh.com/';
+            }
+            return apiBaseUrl;
         };
         $scope.successPayment = function(data) {
             if ($scope.wlt.contentType === "invoice") {
