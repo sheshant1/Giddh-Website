@@ -46,7 +46,7 @@
             return blob;
         };
         $scope.getDetails = function() {
-            return $http.post('/invoice-pay-request', data).then(function(response) {
+            return $http.get('/invoice-pay-request/' + data.randomNumber).then(function(response) {
                 $scope.wlt = response.data.body;
                 $scope.content = "data:application/pdf;base64," + $scope.wlt.content;
                 $scope.pdfFile = $sce.trustAsResourceUrl($scope.content);
