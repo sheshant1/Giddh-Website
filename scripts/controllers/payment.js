@@ -47,14 +47,14 @@
         };
         $scope.getDetails = function() {
             var baseUrl = $scope.getApiBaseUrl();
-            return $http.get(baseUrl + 'invoice-pay-request/' + data.randomNumber).then(function(response) {
+            return $http.jsonp(baseUrl + 'invoice-pay-request/' + data.randomNumber).then(function(response) {
                 $scope.wlt = response.data.body;
                 $scope.content = "data:application/pdf;base64," + $scope.wlt.content;
                 $scope.pdfFile = $sce.trustAsResourceUrl($scope.content);
                 $scope.contentHtml = $sce.trustAsHtml($scope.wlt.htmlContent);
                 return $scope.showInvoice = true;
-            }, function(error) {
-                return toastr.error(error.data.message);
+            }, function(err) {
+                return toastr.error(err.data.message);
             });
         };
         $scope.getApiBaseUrl = function() {
