@@ -47,7 +47,9 @@
         };
         $scope.getDetails = function() {
             var baseUrl = $scope.getApiBaseUrl();
-            return $http.jsonp(baseUrl + 'invoice-pay-request/' + data.randomNumber).then(function(response) {
+            var url = baseUrl + 'invoice-pay-request/' + data.randomNumber;
+            var trustedUrl = $sce.trustAsResourceUrl(url);
+            return $http.jsonp(trustedUrl, {jsonpCallbackParam: 'callback'}).then(function(response) {
                 $scope.wlt = response.data.body;
                 $scope.content = "data:application/pdf;base64," + $scope.wlt.content;
                 $scope.pdfFile = $sce.trustAsResourceUrl($scope.content);
