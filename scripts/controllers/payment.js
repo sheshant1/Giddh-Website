@@ -49,14 +49,14 @@
             var baseUrl = $scope.getApiBaseUrl();
             var url = baseUrl + 'invoice-pay-request/' + data.randomNumber;
             var trustedUrl = $sce.trustAsResourceUrl(url);
-            return $http.jsonp(trustedUrl, {jsonpCallbackParam: 'callback'}).then(function(response) {
+            return $http.get(trustedUrl, { withCredentials: false }).then(function(response) {
                 $scope.wlt = response.data.body;
                 $scope.content = "data:application/pdf;base64," + $scope.wlt.content;
                 $scope.pdfFile = $sce.trustAsResourceUrl($scope.content);
                 $scope.contentHtml = $sce.trustAsHtml($scope.wlt.htmlContent);
                 return $scope.showInvoice = true;
             }, function(err) {
-                return toastr.error(err.data.message);
+                return toastr.error('Something went wrong.');
             });
         };
         $scope.getApiBaseUrl = function() {
