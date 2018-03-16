@@ -8,14 +8,6 @@
         $scope.randomUniqueName = searchArr[1];
         data = {};
         data.randomNumber = $scope.randomUniqueName;
-        $scope.wlt = {
-            Amnt: 100,
-            orderId: ""
-        };
-        $scope.basicInfo = {
-            name: 'ravi soni',
-            email: 'ravisoni@walkover.in'
-        };
         $scope.pdfFile = "";
         $scope.showInvoice = true;
         $scope.removeDotFromString = function(str) {
@@ -64,7 +56,7 @@
             switch (window.location.hostname) {
                 case 'localapp.giddh.com':
                 case 'dev.giddh.com':
-                    apiBaseUrl = 'http://apitest.giddh.com/';
+                    apiBaseUrl = 'http://apidev.giddh.com/';
                     break;
                 case 'test.giddh.com':
                     apiBaseUrl = 'http://apitest.giddh.com/';
@@ -81,17 +73,18 @@
             return apiBaseUrl;
         };
         $scope.successPayment = function(data) {
+            var baseUrl = $scope.getApiBaseUrl();
             if ($scope.wlt.contentType === "invoice") {
-                return $http.post('/invoice/pay', data).then(function(response) {
-                    return toastr.success(response.data.body);
+                $http.post(baseUrl + 'company/' + $scope.wlt.company.uniqueName + '/invoices/' + $scope.wlt.contentNumber + '/pay', data, { withCredentials: false }).then(function(response) {
+                    toastr.success(response.data.body);
                 }, function(error) {
-                    return toastr.error(error.data.message);
+                    toastr.error(error.data.message);
                 });
             } else if ($scope.wlt.contentType === "proforma") {
-                return $http.post('/proforma/pay', data).then(function(response) {
-                    return toastr.success(response.body);
+               $http.post(baseUrl + 'company/' + $scope.wlt.company.uniqueName + '/proforma/' + $scope.wlt.contentNumber + '/pay', data, { withCredentials: false }).then(function(response) {
+                    toastr.success(response.body);
                 }, function(error) {
-                    return toastr.error(error.data.message);
+                    toastr.error(error.data.message);
                 });
             }
         };

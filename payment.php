@@ -27,6 +27,7 @@
 
   </div>
   <div ng-if="showInvoice" class="row mr1">
+  <!-- razor-pay -->
     <button ng-if="wlt.status != 'paid'" ng-disabled="disableRazorPay" razor-pay class="btn btn-primary pull-left" style="margin-left:20%;">Pay Now</button>
     <button class="btn btn-primary pull-right" style="margin-right:20%" ng-click="downloadInvoice()">Download</button>
   </div>
@@ -43,7 +44,7 @@
 
 
   <!-- include footer -->
-  <ng-include src="'footer.html'"></ng-include>
+<ng-include src="'footer.html'"></ng-include>
 
   <?php include 'footScript.php';?>
 

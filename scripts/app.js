@@ -7,7 +7,8 @@ angular
 		"satellizer",
 		"LocalStorageModule",
 		"ui.bootstrap",
-		"toastr"
+    "toastr",
+    "razor-pay"
 	])
 	.directive('validNumber', ValidNumber)
 	.config(config)
@@ -217,6 +218,61 @@ function runBlock($rootScope, $window, $http, localStorageService) {     // $q,
   // console.log($rootScope.);
 
 }
+
+angular.module('razor-pay', []).directive('razorPay', [
+  '$compile', '$filter', '$document', '$parse', '$rootScope', '$timeout', 'toastr', function($compile, $filter, $document, $parse, $rootScope, $timeout, toastr) {
+    return {
+      restrict: 'A',
+      scope: false,
+      transclude: false,
+      controller: "paymentCtrl",
+      link: function(scope, element, attrs) {
+        scope.proceedToPay = function(e, amount) {
+          var options, rzp1;
+          options = {
+            key: scope.wlt.razorPayKey,
+            amount: scope.wlt.amount * 100,
+            name: scope.wlt.company.name,
+            description: "Invoice payment for " + scope.wlt.company.name,
+            handler: function(response) {
+              console.log(response, "response after success");
+              return scope.successPayment(response);
+            },
+            prefill: {
+              name: scope.wlt.consumer.name,
+              email: scope.wlt.consumer.email,
+              contact: scope.wlt.consumer.contactNo
+            },
+            // notes: {
+            //   address: 'Address of the user'
+            // },
+            // theme: {
+            //   color: "#449d44"
+            // }
+          };
+          rzp1 = new Razorpay(options);
+          rzp1.open();
+          return e.preventDefault();
+        };
+        return element.on('click', function(e) {
+          var diff;
+          if (scope.isHaveCoupon && !_.isEmpty(scope.coupRes)) {
+            if (scope.amount > scope.discount) {
+              diff = scope.amount - scope.discount;
+              return scope.proceedToPay(e, diff * 100);
+            } else {
+              toastr.warning("Actual amount cannot be less than discount amount", "Warning");
+              return false;
+            }
+          } else {
+            diff = scope.removeDotFromString(scope.wlt.Amnt);
+            return scope.proceedToPay(e, diff * 100);
+          }
+        });
+      }
+    };
+  }
+]);
 
 
 /*
