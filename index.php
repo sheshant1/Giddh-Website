@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="en" ng-app="giddhWebsite">
   <meta charset="UTF-8">
-  <meta name="description" content="Giddh, the best online accounting and bookkeeping software. An accounting software to provide you an outstanding solution for business accounting management"/>
+  <meta name="description" content="Giddh, the best online accounting and bookkeeping software, provides you an outstanding solution for business accounting management. This personal, toprated simple accounting software and account management software will help you properly keep a track of your entire financial records easily."/>
   <meta name="keywords" content="bookkeeping software, Accounting softwares, online accounting software, bookkeeping software for small business"/>
   
-  <title>Giddh ~ Accounting at its Rough! Bookkeeping and Accounting Software</title>
+  <title>Best Business Accounting Software on Cloud , Online & Easy to Use – Giddh.com</title>
 
   <?php include 'head.php';?>
 
