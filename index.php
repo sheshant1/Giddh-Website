@@ -4,7 +4,7 @@
   <meta name="description" content="Giddh, the best online accounting and bookkeeping software, provides you an outstanding solution for business accounting management. This personal, toprated simple accounting software and account management software will help you properly keep a track of your entire financial records easily."/>
   <meta name="keywords" content="bookkeeping software, Accounting softwares, online accounting software, bookkeeping software for small business"/>
   
-  <title>Best Business Accounting Software on Cloud , Online & Easy to Use – Giddh.com</title>
+  <title>Best Business Accounting Software on Cloud | Bookkeeping Software, Online & Easy to Use – Giddh.com</title>
 
   <?php include 'head.php';?>
 
