@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="en" ng-app="giddhWebsite">
 <head>
-  <meta name="description" content="Giddh GST accounting software to file GST return online. Enjoy automated GST return filling with details like GST return form, tax invoice & GST online payments"/>
+  <meta name="description" content="Giddh GST accounting software simplifies the filing of GST return online. Enjoy automated filing with details like GST return form, tax invoice & GST online payments. Simple and easy to use, GST billing software and gst return software help to manage businesses smartly. No need to download! Try it for free today! "/>
   <meta name="keywords" content="bookkeeping software, Accounting softwares, online accounting software, bookkeeping software for small business"/>
   
-  <title>GST return filing Automation (Best GST Accounting Software India)</title>
+  <title>Online GST Return Filing Automation | Best GST Accounting Software India</title>
 
   <?php include 'head.php';?>
 
