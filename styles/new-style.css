@@ -12,6 +12,31 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('../assets/fonts/Roboto-Light.ttf');
+ 
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('../assets/fonts/Roboto-Medium.ttf');
+ 
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('../assets/fonts/Roboto-Bold.ttf');
+  
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('../assets/fonts/Roboto-Regular.ttf');
+  
+}
+
+
+
 
 
 a.anchBtn {
@@ -2251,4 +2276,150 @@ button.toast-close-button {
 }
 .vh100 {
   height: 100vh;
+}
+
+.about-head{
+  background:#FFF7E9;
+  padding:20px 0;
+}
+.about-conten{
+   background:#fff;
+  }
+
+.about-section-body{
+  padding:0;
+}
+.area-flex{
+  display:flex; 
+  align-items:center; 
+  justify-content: center;
+}
+
+.nav-tabs-about { 
+  border:none !important; 
+}
+.nav-tabs-about > li.active > a, .nav-tabs-about > li.active > a:focus, .nav-tabs-about > li.active > a:hover {
+   border-width: 0;
+   }
+.nav-tabs-about > li{
+  padding-left:14px; 
+  padding-right:14px;
+}
+.nav-tabs-about > li > a {
+   border: none; 
+   color: #26263A; 
+   font-size:18px; 
+   padding-left:0 !important; 
+   padding-right:0 !important; 
+   font-family: 'Roboto', sans-serif; 
+   font-weight:500;
+  }
+.nav-tabs-about > li.active > a, .nav-tabs-about > li > a:hover { 
+  border: none !important;
+    background: transparent !important; 
+    border:1px solid transparent !important; 
+   }
+.nav-tabs-about > li > a::after {
+   content: ""; background: #E34B26; 
+   height: 4px; position: absolute; 
+   width: 100%; left:0; bottom: -1px; 
+   transition: all 250ms ease 0s; transform: scale(0); 
+  }
+.nav-tabs-about > li.active > a::after{ 
+  transform: scale(1); 
+}
+
+.tab-pane { 
+  padding: 15px 0; 
+}
+.tab-content{
+  padding:20px;
+}
+.about-content-head{
+  background:#26263A;
+  padding:40px 0;
+}
+
+.about-content-head h1{
+  font-size: 60px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  line-height: 1;
+  padding-bottom: 30px;
+  padding-right: 85px;
+  color:rgba(255,255,255,0.2);
+  font-family:"RobotoLight";
+
+}
+.about-content-head span{
+  font-family:"Roboto-Regular";
+  font-size:24px;
+  color:#FFFFFF;
+  margin-left:42px;
+  display: inline-block;
+}
+.about-content-head h1:after{
+  height:100%;
+  width:1px;
+  content:"";
+  position: absolute;
+  background: rgba(255,255,255,0.3);
+  top:0;
+  right:0;
+}
+.about-content-body .about{
+  background: #FFF7E9;
+  padding:64px 0;
+  font-size:18px;
+  font-family: 'RobotoRegular';
+  color:#26263A;
+  line-height:31px;
+  text-align: justify;
+}
+.about-content-body .about .company{
+  font-size:24px;
+  font-family: 'RobotoMedium';
+}
+.about-content-body .about a{
+  color:#26263A;
+  text-decoration: underline;
+}
+.about-content-body .product{
+  background: #FFF;
+  padding:90px 0;
+}
+.about-content-body .product h1{
+  font-size:50px;
+  font-family: 'RobotoMedium';
+  color:#26263A;
+  position:relative;
+  line-height: 70px;
+}
+.about-content-body .product h1:after{
+ position:absolute;
+ width:80px;
+ height:4px;
+ background: #E34B26;
+ bottom:0;
+ left:0;
+ content:"";
+}
+.about-content-body .tab-content{
+  padding:0;
+}
+.about-content-body .tab-pane{
+  padding:0;
+}
+
+.card { 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); 
+  margin-bottom: 30px;
+ }
+body{ 
+  background: #EDECEC; 
+  padding:50px;
 }
