@@ -34,7 +34,7 @@
               <div class="col-lg-6 center-block text-left">
                 <h1 class="pClr">₹800 <small>yearly</small></h1>
                 <ul>
-                  <li>Charted Accountant <small>or</small> Company Secretary</li>
+                  <li>Chartered Accountant <small>or</small> Company Secretary</li>
                   <li>Non Profit Organisation</li>
                   <li>Startup <small>(Revenue more than 12 and less than 20 lacs yearly)</small></li>
                 </ul>
