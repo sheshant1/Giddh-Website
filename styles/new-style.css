@@ -528,10 +528,24 @@ a.anchBtn {
 .navbar .navbar-btn{
 	margin: 9px 0 0;
 	height: 40px;
-	line-height: 20px;
+	line-height: 15px;
 	padding: 10px 15px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
+}
+.navbar-dark{
+  background:#26263A !important;
+  margin-bottom:0 !important;
+  min-height:80px !important;
+}
+.navbar-dark .btn-secondary{
+  border:1px solid #E34B26 !important;
+}
+.navbar-dark .btn-secondary:hover{
+  color:#fff !important;
+}
+.navbar-dark .navbar-nav > li > a{
+  color:#FFF !important;
 }
 /*navigation light theme*/
 body.light .navbar{
@@ -646,9 +660,9 @@ body.light .navbar.transparent{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .btn-primary {
-	background-color: #e34b26;
-	border-color: #e34b26;
-	color: #fff;
+	background-color: #e34b26 !important;
+	border-color: #e34b26 !important;
+	color: #fff !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
 	color: #bc1d07;
@@ -2278,6 +2292,13 @@ button.toast-close-button {
   height: 100vh;
 }
 
+.about-tab-content{
+  padding:0 !important;
+}
+.about-tab-content .tab-pane{
+  padding:0;
+}
+
 .about-head{
   background:#FFF7E9;
   padding:20px 0;
@@ -2288,6 +2309,28 @@ button.toast-close-button {
 
 .about-section-body{
   padding:0;
+}
+.nav-tabs-values{
+  border-bottom:none !important;
+  padding:64px 0 0 0;
+}
+.nav-tabs-values li a{
+  border:none !important;
+  font-size:12px;
+  max-width:112px;
+  text-align:center;
+  padding:0 !important;
+  text-decoration: none !important;
+  margin:0 16px;
+}
+.nav-tabs-values li a:hover{
+  background: transparent !important;
+  border:none !important;
+}
+.nav-tabs-values li.active a{
+  background:transparent !important;
+  border:none !important;
+  font-weight:bold;
 }
 .area-flex{
   display:flex; 
@@ -2328,6 +2371,7 @@ button.toast-close-button {
 .nav-tabs-about > li.active > a::after{ 
   transform: scale(1); 
 }
+
 
 .tab-pane { 
   padding: 15px 0; 
@@ -2373,12 +2417,15 @@ button.toast-close-button {
 }
 .about-content-body .about{
   background: #FFF7E9;
-  padding:64px 0;
+  padding:0;
   font-size:18px;
   font-family: 'RobotoRegular';
   color:#26263A;
   line-height:31px;
   text-align: justify;
+}
+.about-text{
+  padding:64px 0;
 }
 .about-content-body .about .company{
   font-size:24px;
@@ -2390,7 +2437,8 @@ button.toast-close-button {
 }
 .about-content-body .product{
   background: #FFF;
-  padding:90px 0;
+  padding:90px 0 125px 0;
+  font-family: 'RobotoRegular';
 }
 .about-content-body .product h1{
   font-size:50px;
@@ -2399,6 +2447,7 @@ button.toast-close-button {
   position:relative;
   line-height: 70px;
 }
+
 .about-content-body .product h1:after{
  position:absolute;
  width:80px;
@@ -2414,7 +2463,170 @@ button.toast-close-button {
 .about-content-body .tab-pane{
   padding:0;
 }
+.product .product-info{
+  font-size:18px;
+  line-height: 30px;
+  margin:65px 0;
+  width:59%;
+  vertical-align: middle;
+  float: left;
+}
+.product .walkover-logo{
+  width:316px;
+  height:168px;
+  float: right;
+  margin-top:100px;
+}
+.product .thumbnail{
+  border:1px solid rgba(38, 38, 58, 0.2);
+  box-shadow:none;
+  text-align:center;
+  width:100%;
+  border-radius:0;
+  padding:73px 43px;
+  font-size:18px;
+  line-height:30px;
+  max-width:495px;
+}
+.product .thumbnail .msg{
+  width: 183px;
+  height: 60px;
+}
+.product .thumbnail .socket{
+  width: 238px;
+  height: 68px;
+}
+.product .thumbnail .caption{
+  padding:0;
+}
+.product .thumbnail p{
+  margin:94px 0 50px 0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.product .thumbnail a{
+  text-decoration:underline;
+  color:#156BB3;
+}
 
+.see-company{
+  background:#FFF8EA url('../assets/images/new/banner-grid-design.png') 0 0 repeat;
+  padding:90px 0;
+  text-align: center;
+}
+.see-company .btn{
+  line-height:43px;
+  display:inline-block;
+}
+.see-company h1 {
+  font-size:50px;
+  font-family: 'RobotoMedium';
+  color:#26263A;
+  position:relative;
+  margin-bottom:109px;
+}
+.see-company h1:after{
+  position:absolute;
+  width:80px;
+  height:4px;
+  background: #E34B26;
+  bottom:0;
+  left:41%;
+  content:"";
+ }
+ .theTeam{
+   padding:90px 0;
+ }
+ .theTeam h1 {
+  font-size:50px;
+  font-family: 'RobotoMedium';
+  color:#26263A;
+  position:relative;
+  margin-bottom:64px;
+}
+.theTeam h1:after{
+  position:absolute;
+  width:80px;
+  height:4px;
+  background: #E34B26;
+  bottom:0;
+  left:41%;
+  content:"";
+ }
+ .theTeam .product-info{
+  font-size:18px;
+  line-height: 30px;
+  margin:0;
+  width:59%;
+  vertical-align: middle;
+  float: left;
+}
+ .see-company .text-primary{
+   font-size:26px;
+   font-family: 'RobotoMedium';
+   color:#26263A;
+   margin-bottom:20px;
+ }
+ .see-company .text-secondry{
+  font-size:18px;
+  color:#26263A;
+  margin-bottom:64px;
+}
+.see-company .btn-default{
+  min-width:250px;
+  height:60px;
+  border-radius:0;
+  border:1px solid rgba(38, 38, 58, 0.3);
+  font-size:26px;
+  font-family: 'RobotoMedium';
+  margin-right:50px;
+}
+.mt50{
+  margin-top:50px;
+}
+.customer-big{
+  width:207px;
+  height:170px;
+  float:right;
+  margin-top:-20px;
+}
+.about-content-body .values {
+  padding:90px 0;
+}
+.about-content-body .values .product-info{
+  margin:65px 0 90px 0;
+}
+.team-head h1{
+  width:39%;
+}
+
+.team-head span{
+  width:80%;
+}
+.funder{
+  width:277px;
+  height:348px;
+  float: right;
+}
+.other-member{
+  width:250px;
+  height:134px;
+  overflow: hidden;
+  border:1px solid #707070;
+}
+.mt60{
+  margin-top:60px;
+}
+
+
+@media only screen and (max-width:768px){
+  .product .walkover-logo{
+  max-width:100%;
+}
+.product .thumbnail{
+  max-width:100%;
+}
+}
 .card { 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); 
   margin-bottom: 30px;
