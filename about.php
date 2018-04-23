@@ -25,13 +25,13 @@
                             <div class="col-md-12">
                                           <div class="area-flex">
                                               <ul class="nav nav-tabs nav-tabs-about" role="tablist">
-                                                  <li role="presentation" class="active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab" class="one">About Us</a></li>
+                                                  <li role="presentation" class="active" ng-class="{'active':vm.selectedTab === 'about'><a href="#about" aria-controls="about" role="tab" data-toggle="tab" class="one" ng-click="vm.selectedTab = 'about'">About Us</a></li>
                                                   
-                                                  <li role="presentation"><a href="#values" aria-controls="profile" role="tab" data-toggle="tab" class="two">Our Values</a></li>
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'values'}"><a href="#values" aria-controls="profile" role="tab" data-toggle="tab" class="two" ng-click="vm.selectedTab = 'values'">Our Values</a></li>
 
-                                                  <li role="presentation"><a href="#principle" aria-controls="principle" role="tab" data-toggle="tab" class="three">Leadership Principles</a></li>
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'principle'}"><a href="#principle" aria-controls="principle" role="tab" data-toggle="tab" class="three" ng-click="vm.selectedTab = 'principle'">Leadership Principles</a></li>
 
-                                                  <li role="presentation"><a href="#team" aria-controls="settings" role="tab" data-toggle="tab" class="four">The Team</a></li>
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'team'}"><a href="#team" aria-controls="settings" role="tab" data-toggle="tab" class="four"  ng-click="vm.selectedTab = 'team'">The Team</a></li>
                                               </ul>
 
                                         
@@ -313,62 +313,206 @@
               <div class="about-content tab-pane" id="principle">
                   <div class="about-content-head">
                       <div class="container area-flex">
-                            <h1>Leadership Principles</h1>
-                            <span>
-                                    The difference between success and failure is not the amount of money or resources you have, but how a leader leads his team. A good leader always:</span>
+                            <h1>Our Values</h1>
+                            <span>Our values are the essence of our identity and summarises the<br> purpose of our existence.</span>
                       </div>
                   </div>
                     <div class="about-content-body">
-                              <div class="about">
-                                          <div class="container">
-                                                <div class="row">
-                                                      <div class="col-sm-12">sdwerwerwe</div>
-                                                </div>
+                    <div class="about">
+                                <div class="container">
+                                            <div class="tab-content">
+                                                <!-- start secondry tabs -->
+                                                <div>
+                                                      <ul class="nav nav-tabs nav-tabs-values  nav-tab-principle">
+                                                            <li>
+                                                                  <a href="#Nurture">
+                                                                        Nurtures Collaboration</a>
+                                                            </li>
+                                                            <li><a href="#lcommunication">Leads through Communication</a></li>
+                                                            <li><a href="#lexample">Leads By Example</a></li>
+                                                            <li><a href="#consults">Consults and Delegates</a></li>
+                                                            <li><a href="#courageous">Is Courageousn</a></li>
+                                                            <li><a href="#integrity">Adds Integrity</a></li>
+                                                            <li><a href="#serves">Serves for the Greater Good</a></li>
+                                                            <li><a href="#process">Defines & Creates Processes</a></li>
+                                                            <li><a href="#evolve">Adapts to Evolve</a></li>
+                                                      </ul>
+                                              </div>
+                                           </div>
+                               </div>
+                               <div class="container-fluid mt50">
+                                    <div class="product p-t-0 p-b-0">
+                                    <div class="row" id="Nurture">
+                                          <div class="figure bgNurture">
+                                              <div class="topSection">
+                                                   <p class="left">
+                                                         <span class="icon icon-Nurtures"></span>
+                                                         <span class="heading">Nurtures <br>Collaboration</span>
+                                                      </p>
+                                                   <p class="right">
+                                                      A good leader always nurtures collaboration and acts as an active
+                                                      part in the process of co-creation with his team and the entire
+                                                      ecosystem. A bad leader fails to grasp the importance of
+                                                      collaboration and thus fails himself and his team.
+                                                   </p>
+                                              </div>     
                                           </div>
-                              </div>
-                   </div>
+                                    </div>
+                                    <div class="row" id="lcommunication">
+                                          <div class="figure bgLeads">
+                                                <div class="topSection">
+                                                      <p class="left">
+                                                            <span class="icon icon-Communication"></span>
+                                                            <span class="heading">Leads through<br> Communication</span>
+                                                            </p>
+                                                      <p class="right">
+                                                      A Good leader creates an environment that promotes honest and open communications without the fear of judgement. A bad leaders creates an hostile environment that restricts open lines of communication.
+                                                      </p>
+                                                </div>     
+                                          </div>
+                                    </div>
+                                    <div class="row" id="lexample">
+                                          <div class="figure bgLeadsExa">
+                                                <div class="topSection">
+                                                      <p class="left">
+                                                            <span class="icon icon-Leads"></span>
+                                                            <span class="heading">Leads By Example</span>
+                                                            </p>
+                                                      <p class="right">
+                                                            A good leader always leads by example. He is the first to take actions, sets milestones and then encourages his team follow. A bad leader is passive and fails to take initiative.
+                                                      </p>
+                                                </div>     
+                                          </div>
+                                    </div>
+                                    <div class="row" id="consults">
+                                          <div class="figure bgConsult">
+                                                <div class="topSection">
+                                                      <p class="left">
+                                                            <span class="icon icon-consult"></span>
+                                                            <span class="heading">Consults and<br> Delegates</span>
+                                                            </p>
+                                                      <p class="right">
+                                                      A good leader has the ability to seek consultation from his subordinates and also at the same time has the ability to assign responsibilities to the right employees keeping their skills into account. A bad leader is a bad judge of skill set in his personnel and delegates poorly.
+                                                      </p>
+                                                </div>     
+                                          </div>
+                                    </div>
+                                    <div class="row" id="courageous">
+                                          <div class="figure bgCouragious">
+                                                <div class="topSection">
+                                                      <p class="left">
+                                                            <span class="icon icon-Courageous"></span>
+                                                            <span class="heading">Is Courageous</span>
+                                                            </p>
+                                                      <p class="right">
+                                                            A good leader has the strength of self to act with intention on behalf of the common good. A bad leader does not possess the courage to take a stand during adversity.
+                                                      </p>
+                                                </div>     
+                                          </div>
+                                    </div>
+                                    <div class="row" id="integrity">
+                                          <div class="figure bgIntergrity">
+                                                <div class="topSection">
+                                                      <p class="left">
+                                                            <span class="icon icon-integrity"></span>
+                                                            <span class="heading">Adds Integrity</span>
+                                                            </p>
+                                                      <p class="right">
+                                                            A good leader has moral courage, ethical strength, and trustworthiness. He is able to keep promises and fulfill expectations. A bad leader lacks integrity that inspires his team to take ethical measures in all their actions.
+                                                      </p>
+                                                </div>     
+                                          </div>
+                                    </div>
+                                    <div class="row" id="serves">
+                                          <div class="figure bgServes">
+                                                <div class="topSection">
+                                                      <p class="left">
+                                                            <span class="icon icon-ServeGood"></span>
+                                                            <span class="heading">Serves for the<br> Greater Good</span>
+                                                            </p>
+                                                      <p class="right">
+                                                            A good leader shows commitment that extends beyond one’s own self interest; personal humility for the sake of a greater cause. A bad leader is self serving and does not believe in serving for a greater good.
+                                                      </p>
+                                                </div>     
+                                          </div>
+                                    </div>
+                                    <div class="row" id="process">
+                                          <div class="figure bgDefine">
+                                                <div class="topSection">
+                                                      <p class="left">
+                                                            <span class="icon icon-process"></span>
+                                                            <span class="heading">Defines and<br> Creates Processes</span>
+                                                            </p>
+                                                      <p class="right">
+                                                            A good leader creates new processes before indulging into a new project and makes sure to change that process if it is rectifiable. A bad leader takes the shortest path to complete a project without rectifying the process.
+                                                      </p>
+                                                </div>     
+                                          </div>
+                                    </div>
+                                    <div class="row" id="evolve">
+                                          <div class="figure bgAdapts">
+                                                <div class="topSection">
+                                                      <p class="left">
+                                                            <span class="icon icon-evolve"></span>
+                                                            <span class="heading">Adapts to Evolve</span>
+                                                            </p>
+                                                      <p class="right">
+                                                            A good leader uses his experience to recognize different situations and take actions according to the context. A bad leader make the mistake of taking the same actions regardless of the facts.
+                                                      </p>
+                                                </div>     
+                                          </div>
+                                    </div>
+
+
+
+                               </div>
+                               </div>
+                        </div>
+              </div>
               </div>
             <!-- our principle end -->
-
-            <div class="about-content tab-pane" id="team">
-                  <div class="about-content-head team-head">
-                        <div class="container area-flex">
-                              <h1>The Team</h1>
-                              <span>
-                                    Our VISION is to provide technologies to organizations that enables them to take data driven financial decisions in the quickest way possible.
-                              </span>
-                        </div>
-                  </div>
-                  <div class="about-content-body">
-                        <div class="theTeam">
-                        <div class="container">
-                              <div class="row">
-                                    <div class="col-sm-12">
-                                          <h1 class="text-center">The Team</h1>
-                                    </div>
-                                    <div class="col-sm-12">
-                                          <p class="product-info">
-                                                Shubhendra Agarwal,<br>
-                                                Founder, Tech Visionary, Marketing Guru <br><br>
-                                                Shubhendra Agarwal is the founder of Giddh. An entrepreneur at heart and an engineer by choice, he founded Giddh in 2016 with the idea of unifying accounting with automation. Prior to Giddh, Shubhendra was the co-founder and CFO of MSG91, one of India’s top 5 messaging solutions firm.<br><br>
-                                                With experience lasting over a decade in engineering, he has been a keen analyser of consumer behavior helping him cultivate a team that creates simple yet highly functional IT products.
-                                          </p>
-                                          <img src="../assets/images/Shubhendra.jpg" alt="" class="funder">
-                                    </div>
-                                    <div class="col-sm-12">
-                                          <div class="mt60">
-                                                <figure class="other-member">
-                                                      <img src="../assets/images/Shubhendra.jpg" alt="">
-                                                </figure>
-                                          </div>
+              <!-- the team start    -->
+                  <div class="about-content tab-pane" id="team">
+                              <div class="about-content-head team-head">
+                                    <div class="container area-flex">
+                                          <h1>The Team</h1>
+                                          <span>
+                                                Our VISION is to provide technologies to organizations that enables them to take data driven financial decisions in the quickest way possible.
+                                          </span>
                                     </div>
                               </div>
-                        </div>
-                        </div>
+                              <div class="about-content-body">
+                                    <div class="theTeam">
+                                    <div class="container">
+                                          <div class="row">
+                                                <div class="col-sm-12">
+                                                      <h1 class="text-center">The Team</h1>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                      <p class="product-info">
+                                                            Shubhendra Agarwal,<br>
+                                                            Founder, Tech Visionary, Marketing Guru <br><br>
+                                                            Shubhendra Agarwal is the founder of Giddh. An entrepreneur at heart and an engineer by choice, he founded Giddh in 2016 with the idea of unifying accounting with automation. Prior to Giddh, Shubhendra was the co-founder and CFO of MSG91, one of India’s top 5 messaging solutions firm.<br><br>
+                                                            With experience lasting over a decade in engineering, he has been a keen analyser of consumer behavior helping him cultivate a team that creates simple yet highly functional IT products.
+                                                      </p>
+                                                      <img src="../assets/images/Shubhendra.jpg" alt="" class="funder">
+                                                </div>
+                                                <div class="col-sm-12">
+                                                      <div class="mt60">
+                                                            <figure class="other-member">
+                                                                  <img src="../assets/images/Shubhendra.jpg" alt="">
+                                                            </figure>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    </div>
+                              </div>
                   </div>
-           </div>
 
+             <!-- the team end    -->
 
+             <!-- see company start -->
                  <div class="see-company">
                       <div class="container">
                         <div class="row">
@@ -377,15 +521,23 @@
                             <p class="text-primary">See more about the Company</p>
                             <p class="text-secondry">Learn more about how Giddh can provide the solution you need.</p>
                           </div>
-                          <div class="col-sm-12 text-center">
-                                <a class="btn btn-default" id="btn_about">About Us</a>
-                                <a class="btn btn-default" id="btn_values">Our Values</a>
-                                <a class="btn btn-default" id="btn_principle">Our Principles</a>
-                                <a class="btn btn-default" id="btn_team">The Team</a>
-                          </div>
+
+                        <ul class="nav nav-tabs nav-tabs-footer area-flex wd-100per noborder" role="tablist">
+                              <li role="presentation" class="active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab" class="one btn btn-default" ng-click="vm.selectedTab = 'about'" ng-show="vm.selectedTab != 'about'">About Us</a></li>
+                              
+                              <li role="presentation"><a href="#values" aria-controls="profile" role="tab" data-toggle="tab" class="two btn btn-default" ng-click="vm.selectedTab = 'values'" ng-show="vm.selectedTab != 'values'">Our Values</a></li>
+
+                              <li role="presentation"><a href="#principle" aria-controls="principle" role="tab" data-toggle="tab" class="three btn btn-default" ng-click="vm.selectedTab = 'principle'" ng-show="vm.selectedTab != 'principle'">Leadership Principles</a></li>
+
+                              <li role="presentation"><a href="#team" aria-controls="settings" role="tab" data-toggle="tab" class="four btn btn-default"  ng-click="vm.selectedTab = 'team'" ng-show="vm.selectedTab != 'team'">The Team</a></li>
+                        </ul>
+
+
+                        
                         </div>
                       </div>
-                    </div>
+                </div>
+                <!-- see company end -->
 
           </div>
         </div>              
@@ -422,38 +574,45 @@ $('.nav-tabs li a').click(function(e) {
     e.preventDefault();
 });
 
-$(document).ready(function() {
-      $('#btn_about').hide();
-         $(".one").click(function(){
-          $('#btn_about').hide();
-          $('#btn_values').show();
-          $('#btn_principle').show();
-          $('#btn_team').show();
-           
+//smooth scrolling
+// Select all links with hashes
+$('.nav-tab-principle li a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
         });
-        $(".two").click(function(){
-            $('#btn_about').show();
-          $('#btn_values').hide();
-          $('#btn_principle').show();
-          $('#btn_team').show();
-           
-        });
-        $(".three").click(function(){
-            $('#btn_about').show();
-          $('#btn_values').show();
-          $('#btn_principle').hide();
-          $('#btn_team').show();
-          
-        });
-        $(".four").click(function(){
-            $('#btn_about').show();
-          $('#btn_values').show();
-          $('#btn_principle').show();
-          $('#btn_team').hide();
-           
-        });
-    });
+      }
+    }
+  });
 </script>
+
   
 </body>
 </html>

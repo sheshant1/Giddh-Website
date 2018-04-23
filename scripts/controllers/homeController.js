@@ -3,6 +3,7 @@
   
   function HomeController($scope, $rootScope, $http, $timeout, toastr) {
     var $this = this;
+    this.selectedTab = 'about';
     this.videoObj = {
       resources: ['https://giddh-fs8eefokm8yjj.stackpathdns.com/public/website/images/Giddh.mp4'],
       poster: 'https://giddh-fs8eefokm8yjj.stackpathdns.com/public/website/images/new/banner.jpg',
