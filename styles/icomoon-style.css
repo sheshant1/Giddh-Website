@@ -24,38 +24,65 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-evolve:before {
+.icon-alwaysbefore:before {
   content: "\e900";
-  
+ 
 }
-.icon-integrity:before {
+.icon-custcome:before {
   content: "\e901";
-  
 }
-.icon-consult:before {
+.icon-peoplepower:before {
   content: "\e902";
   
 }
-.icon-process:before {
+.icon-setbacks:before {
   content: "\e903";
   
 }
-.icon-Courageous:before {
+.icon-transparency:before {
   content: "\e904";
   
 }
-.icon-Leads:before {
+.icon-settle:before {
   content: "\e905";
   
 }
-.icon-Communication:before {
+.icon-empower:before {
   content: "\e906";
   
 }
-.icon-Nurtures:before {
+.icon-focus:before {
   content: "\e907";
+ 
+}
+.icon-impossible:before {
+  content: "\e908";
+ 
+}
+.icon-evolve:before {
+  content: "\e909";
+}
+.icon-integrity:before {
+  content: "\e90a";
+}
+.icon-consult:before {
+  content: "\e90b";
+}
+.icon-process:before {
+  content: "\e90c";
+}
+.icon-Courageous:before {
+  content: "\e90d";
+}
+.icon-Leads:before {
+  content: "\e90e";
+}
+.icon-Communication:before {
+  content: "\e90f";
+}
+.icon-Nurtures:before {
+  content: "\e910";
 }
 .icon-ServeGood:before {
-  content: "\e908";
-  
+  content: "\e911";
 }

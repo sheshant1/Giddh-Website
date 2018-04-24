@@ -2310,11 +2310,31 @@ button.toast-close-button {
 .about-section-body{
   padding:0;
 }
+
 .nav-tabs-values{
   border-bottom:none !important;
-  padding:64px 0 0 0;
+  padding:51px 0 0 0;
+}
+.nav-tabs-values li a:focus{
+  background:transparent !important;
 }
 .nav-tabs-values li a span{
+  /* color:#fff; */
+  font-size:37px;
+  display: block;
+    margin-bottom: 21px;
+    border-radius:100%;
+    width:60px;
+    height:60px;
+    background:transparent;
+    margin:auto;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 21px;
+    color:#666666;
+}
+.nav-tabs-values li a.activeanchor span{
+  background: rgba(227, 75, 38, 0.6) !important;
   color:#fff;
 }
 .nav-tabs-values li a{
@@ -2409,6 +2429,11 @@ button.toast-close-button {
   font-family:"RobotoLight";
 
 }
+.about-content-head h1.twoline{
+  padding-top:0;
+  padding-bottom:0;
+}
+
 .about-content-head span{
   font-family:"Roboto-Regular";
   font-size:24px;
@@ -2425,6 +2450,11 @@ button.toast-close-button {
   top:0;
   right:0;
 }
+.about-content-head .leader{
+  color:#FFF;
+  text-decoration:underline;
+  font-weight:bold;
+}
 .about-content-body .about{
   background: #FFF7E9;
   padding:0;
@@ -2433,6 +2463,9 @@ button.toast-close-button {
   color:#26263A;
   line-height:31px;
   text-align: justify;
+}
+.about-content-body .head-left:after{
+  left:0;
 }
 .about-text{
   padding:64px 0;
@@ -2571,6 +2604,84 @@ button.toast-close-button {
   vertical-align: middle;
   float: left;
 }
+figure.member{
+  width:200px;
+  height:200px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right:30px;
+  margin-bottom:30px;
+  position: relative;
+  font-family: 'RobotoRegular';
+}
+figure.member .member-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(4, 4, 4,0.6);
+  padding: 5px;
+  color: #FFF;
+  text-align: center;
+  margin-bottom:0;
+  line-height:16px;
+}
+.member-footer .name{
+  font-size: 15px;
+  display: block;
+}
+.member-footer .designation{
+  font-size: 10px;
+}
+.founder{
+  background:url('/assets/images/team/shubendra-big.png') 0 0 no-repeat;
+  background-size:cover;
+  padding:78px 0 102px 133px;
+}
+.founder h1 {
+  font-size:50px;
+  font-family: 'RobotoMedium';
+  color:#26263A;
+  position:relative;
+  margin-bottom:64px;
+}
+.founder p{
+  width:50%;
+  line-height: 31px;
+  font-size:18px;
+  color:#fff;
+  font-family: 'RobotoRegular';
+}
+.founder .name{
+  font-weight:bold;
+  font-size:25px;
+}
+.founder h1:after{
+  position:absolute;
+  width:80px;
+  height:4px;
+  background: #E34B26;
+  bottom:0;
+  left:41%;
+  content:"";
+ }
+
+
+figure.member:last-child{
+  border:1px solid #707070;
+  font-size:20px;
+  text-align: center;
+}
+
+figure.member:last-child span.empty{
+  vertical-align: middle;
+  position: relative;
+  top: 25%;
+  line-height: 24px;
+}
+.p-zero{
+  padding:0 !important;
+}
  .see-company .text-primary{
    font-size:26px;
    font-family: 'RobotoMedium';
@@ -2606,8 +2717,38 @@ button.toast-close-button {
 .about-content-body .values .product-info{
   margin:65px 0 90px 0;
 }
+.about-content-body .mentors-info{
+  border:1px solid #707070;
+}
+.about-content-body .mentors-info p{
+  font-size:18px;
+  line-height: 31px;
+  padding:48px 0 47px 0;
+  width:89%;
+  font-family: 'RobotoRegular';
+}
+.about-content-body .mentors-info p.left{
+  padding-left:21px;
+}
+.about-content-body .mentors-info p .name{
+  font-weight:600;
+}
+.about-content-body .mentors-info p span{
+  font-size:25px;
+  font-weight:bold;
+}
+.about-content-body .mentors-info img{
+  float: left;
+}
+
 .team-head h1{
   width:39%;
+}
+.m-t-90{
+  margin-top:90px;
+}
+.m-t-70{
+  margin-top:70px;
 }
 
 .team-head span{
@@ -2749,6 +2890,19 @@ margin-right:23px;
   border:1px solid #E34B26 !important;
   background:#fff !important;
   color:#E34B26 !important;
+}
+.nav-tabs-footer > li.active > a{
+  border-bottom: 1px solid rgba(38, 38, 58, 0.3) !important;
+}
+.nav-tabs-footer > li.remove a{
+  border-bottom:transparent !important;
+}
+.activeanchor span{
+  display: block;
+  background: #E34B26;
+  border-radius:100%;
+  width:100px;
+  height:100px;
 }
 
 @media only screen and (max-width:1367px){

@@ -25,13 +25,13 @@
                             <div class="col-md-12">
                                           <div class="area-flex">
                                               <ul class="nav nav-tabs nav-tabs-about" role="tablist">
-                                                  <li role="presentation" class="active" ng-class="{'active':vm.selectedTab === 'about'><a href="#about" aria-controls="about" role="tab" data-toggle="tab" class="one" ng-click="vm.selectedTab = 'about'">About Us</a></li>
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'about', 'remove':vm.selectedTab !== 'about'}"><a href="#about" aria-controls="about" role="tab" data-toggle="tab" class="one" ng-click="vm.selectedTab !== 'about'">About Us</a></li>
                                                   
-                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'values'}"><a href="#values" aria-controls="profile" role="tab" data-toggle="tab" class="two" ng-click="vm.selectedTab = 'values'">Our Values</a></li>
+                                                  <li role="presentation" ng-class="{'remove':vm.selectedTab !== 'values'}"><a href="#values" aria-controls="profile" role="tab" data-toggle="tab" class="two" ng-click="vm.selectedTab = 'values'" >Our Values</a></li>
 
-                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'principle'}"><a href="#principle" aria-controls="principle" role="tab" data-toggle="tab" class="three" ng-click="vm.selectedTab = 'principle'">Leadership Principles</a></li>
+                                                  <li role="presentation" ng-class="{'remove':vm.selectedTab !== 'principle'}"><a href="#principle" aria-controls="principle" role="tab" data-toggle="tab" class="three" ng-click="vm.selectedTab = 'principle'" >Leadership Principles</a></li>
 
-                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'team'}"><a href="#team" aria-controls="settings" role="tab" data-toggle="tab" class="four"  ng-click="vm.selectedTab = 'team'">The Team</a></li>
+                                                  <li role="presentation" ng-class="{'remove':vm.selectedTab !== 'team'}"><a href="#team" aria-controls="settings" role="tab" data-toggle="tab" class="four" ng-click="vm.selectedTab = 'team'">The Team</a></li>
                                               </ul>
 
                                         
@@ -123,15 +123,33 @@
                                                 <!-- start secondry tabs -->
                                                 <div>
                                                         <ul class="nav nav-tabs nav-tabs-values" role="tablist">
-                                                          <li role="presentation" class="active"><a href="#custComFirst" aria-controls="custComFirst" role="tab" data-toggle="tab">Customers Come First</a></li>
-                                                          <li role="presentation"><a href="#breakBound" aria-controls="breakBound" role="tab" data-toggle="tab">Setbacks to Break Boundaries</a></li>
-                                                          <li role="presentation"><a href="#impoGoals" aria-controls="impoGoals" role="tab" data-toggle="tab">We Set Impossible Goals</a></li>
-                                                          <li role="presentation"><a href="#peoplePower" aria-controls="peoplePower" role="tab" data-toggle="tab">People are our Power</a></li>
-                                                          <li role="presentation"><a href="#peopleFocus" aria-controls="peopleFocus" role="tab" data-toggle="tab">We Focus on Why & How?</a></li>
-                                                          <li role="presentation"><a href="#alwaysBefore" aria-controls="alwaysBefore" role="tab" data-toggle="tab">Always We Before Me</a></li>
-                                                          <li role="presentation"><a href="#doNotSettle" aria-controls="doNotSettle" role="tab" data-toggle="tab">We Don’t Settle</a></li>
-                                                          <li role="presentation"><a href="#empowerFut" aria-controls="empowerFut" role="tab" data-toggle="tab">We Empower The Future</a></li>
-                                                          <li role="presentation"><a href="#transparency" aria-controls="transparency" role="tab" data-toggle="tab">Transparency and Honesty</a></li>
+                                                          <li role="presentation"><a href="#custComFirst" aria-controls="custComFirst" role="tab" data-toggle="tab">
+                                                           <span class="icon icon-custcome"></span>     
+                                                          Customers Come First</a></li>
+                                                          <li role="presentation"><a href="#breakBound" aria-controls="breakBound" role="tab" data-toggle="tab">
+                                                          <span class="icon icon-setbacks"></span>       
+                                                          Setbacks to Break Boundaries</a></li>
+                                                          <li role="presentation"><a href="#impoGoals" aria-controls="impoGoals" role="tab" data-toggle="tab">
+                                                          <span class="icon icon-impossible"></span> 
+                                                          We Set Impossible Goals</a></li>
+                                                          <li role="presentation"><a href="#peoplePower" aria-controls="peoplePower" role="tab" data-toggle="tab">
+                                                          <span class="icon icon-peoplepower"></span>     
+                                                          People are our Power</a></li>
+                                                          <li role="presentation"><a href="#peopleFocus" aria-controls="peopleFocus" role="tab" data-toggle="tab">
+                                                          <span class="icon icon-alwaysbefore"></span>      
+                                                          We Focus on Why & How?</a></li>
+                                                          <li role="presentation"><a href="#alwaysBefore" aria-controls="alwaysBefore" role="tab" data-toggle="tab">
+                                                          <span class="icon icon-focus"></span>          
+                                                          Always We Before Me</a></li>
+                                                          <li role="presentation"><a href="#doNotSettle" aria-controls="doNotSettle" role="tab" data-toggle="tab">
+                                                          <span class="icon icon-settle"></span>
+                                                                We Don’t Settle</a></li>
+                                                          <li role="presentation"><a href="#empowerFut" aria-controls="empowerFut" role="tab" data-toggle="tab">
+                                                          <span class="icon icon-empower"></span>      
+                                                          We Empower The Future</a></li>
+                                                          <li role="presentation"><a href="#transparency" aria-controls="transparency" role="tab" data-toggle="tab">
+                                                          <span class="icon icon-transparency"></span>         
+                                                          Transparency and Honesty</a></li>
                                                         
                                                         </ul>
                                                 <!-- end secondry tabs -->
@@ -313,8 +331,8 @@
               <div class="about-content tab-pane" id="principle">
                   <div class="about-content-head">
                       <div class="container area-flex">
-                            <h1>Our Values</h1>
-                            <span>Our values are the essence of our identity and summarises the<br> purpose of our existence.</span>
+                            <h1 class="twoline">Leadership Principles</h1>
+                            <span>The difference between success and failure is not the amount of money or resources you have, but how a leader leads his team.<br><a class="leader"> A GOOD LEADER ALWAYS:</a>.</span>
                       </div>
                   </div>
                     <div class="about-content-body">
@@ -326,16 +344,33 @@
                                                       <ul class="nav nav-tabs nav-tabs-values  nav-tab-principle">
                                                             <li>
                                                                   <a href="#Nurture">
+                                                                  <span class="icon icon-Nurtures"></span>
                                                                         Nurtures Collaboration</a>
                                                             </li>
-                                                            <li><a href="#lcommunication">Leads through Communication</a></li>
-                                                            <li><a href="#lexample">Leads By Example</a></li>
-                                                            <li><a href="#consults">Consults and Delegates</a></li>
-                                                            <li><a href="#courageous">Is Courageousn</a></li>
-                                                            <li><a href="#integrity">Adds Integrity</a></li>
-                                                            <li><a href="#serves">Serves for the Greater Good</a></li>
-                                                            <li><a href="#process">Defines & Creates Processes</a></li>
-                                                            <li><a href="#evolve">Adapts to Evolve</a></li>
+                                                            <li><a href="#lcommunication">
+                                                            <span class="icon icon-Communication"></span>
+                                                            Leads through Communication</a></li>
+                                                            <li><a href="#lexample">
+                                                            <span class="icon icon-Leads"></span>
+                                                            Leads By Example</a></li>
+                                                            <li><a href="#consults">
+                                                            <span class="icon icon-consult"></span>
+                                                            Consults and Delegates</a></li>
+                                                            <li><a href="#courageous">
+                                                            <span class="icon icon-Courageous"></span>
+                                                            Is Courageousn</a></li>
+                                                            <li><a href="#integrity">
+                                                            <span class="icon icon-integrity"></span>
+                                                            Adds Integrity</a></li>
+                                                            <li><a href="#serves">
+                                                            <span class="icon icon-ServeGood"></span>
+                                                            Serves for the Greater Good</a></li>
+                                                            <li><a href="#process">
+                                                            <span class="icon icon-process"></span>
+                                                            Defines & Creates Processes</a></li>
+                                                            <li><a href="#evolve">
+                                                            <span class="icon icon-evolve"></span>
+                                                            Adapts to Evolve</a></li>
                                                       </ul>
                                               </div>
                                            </div>
@@ -485,24 +520,169 @@
                                     <div class="theTeam">
                                     <div class="container">
                                           <div class="row">
-                                                <div class="col-sm-12">
-                                                      <h1 class="text-center">The Team</h1>
+                                                <div class="col-sm-3">
+                                                      <h1 class="head-left">The Team</h1>
                                                 </div>
-                                                <div class="col-sm-12">
-                                                      <p class="product-info">
-                                                            Shubhendra Agarwal,<br>
-                                                            Founder, Tech Visionary, Marketing Guru <br><br>
-                                                            Shubhendra Agarwal is the founder of Giddh. An entrepreneur at heart and an engineer by choice, he founded Giddh in 2016 with the idea of unifying accounting with automation. Prior to Giddh, Shubhendra was the co-founder and CFO of MSG91, one of India’s top 5 messaging solutions firm.<br><br>
-                                                            With experience lasting over a decade in engineering, he has been a keen analyser of consumer behavior helping him cultivate a team that creates simple yet highly functional IT products.
-                                                      </p>
-                                                      <img src="../assets/images/Shubhendra.jpg" alt="" class="funder">
+                                          </div>
+                                          <div class="row">
+                                                <div class="col-sm-12 p-zero">
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/alok.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Alok</span>
+                                                                 <span class="designation">Product Associate  </span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/Gaurav.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Gaurav</span>
+                                                                 <span class="designation">Web Development Engineer</span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/nidhi.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Nidhi</span>
+                                                                 <span class="designation">Programmer & Database Architect</span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/mayank.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Mayank</span>
+                                                                 <span class="designation">Software Engineer</span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/sheba.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Sheba</span>
+                                                                 <span class="designation">Inbound Sales Executive </span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/jay.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Jay</span>
+                                                                 <span class="designation">Java Developer</span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/aditya.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Aditya</span>
+                                                                 <span class="designation">Java Developer</span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/kunal.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Kunal</span>
+                                                                 <span class="designation">Full Stack Developer</span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/akshay.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Akshay</span>
+                                                                 <span class="designation">PSoftware Engineer - Java Developer</span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <span class="empty">Interested to <br>join our<br> team.</span>
+                                                     </figure>
                                                 </div>
-                                                <div class="col-sm-12">
-                                                      <div class="mt60">
-                                                            <figure class="other-member">
-                                                                  <img src="../assets/images/Shubhendra.jpg" alt="">
-                                                            </figure>
+                                          </div>
+                                    </div>
+                                    <div class="container-fluid">
+                                           <div class="row">
+                                                <div class="col-sm-12 p-zero">
+                                                      <div class="founder theTeam">
+                                                            <h1 class="head-left">Founder</h1>
+                                                            <p>
+                                                                  <span class="name">Shubhendra Agarwal,</span><br>
+                                                                  Founder, Tech Visionary<br><br>
+                                                                  Shubhendra Agarwal is the founder of Giddh. An entrepreneur at heart and an engineer by choice, he founded Giddh in 2016 with the idea of unifying accounting with automation. Prior to Giddh, Shubhendra was the co-founder and CFO of MSG91, one of India’s top 5 messaging solutions firm.<br><br>
+                                                                  With experience lasting over a decade in engineering, he has been a keen analyser of consumer behavior helping him cultivate a team that creates simple yet highly functional IT products.
+                                                            </p>
                                                       </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="container">
+                                          <div class="row">
+                                                <div class="col-sm-3">
+                                                      <h1 class="head-left m-t-90">Mentors</h1>
+                                                </div>
+                                          </div>
+                                          <div class="row">
+                                                <div class="col-sm-12 p-zero">
+                                                   <div class="mentors-info">
+                                                         <div class="row">
+                                                               <div class="col-sm-6">
+                                                                        <img src="/assets/images/team/pushpendra.png" alt=""> 
+                                                               </div>
+                                                               <div class="col-sm-6 p-zero">
+                                                                  <p>
+                                                                        <span class="name">Puspendra Agarwal,</span><br> Idea Guy, Technology Geek<br><br> A calculated risk-taker with passion for everything numbers, Pushpendra is an IMT pass out, and the founder of Walkover. Over the years Pushpendra has perfected the art of crafting the most efficient code and believes apathy to be a man’s biggest foe and time to be his biggest ally.
+                                                                  </p>
+                                                              </div>
+                                                        </div>
+                                                   </div>
+                                                   <div class="mentors-info m-t-70">
+                                                         <div class="row">
+                                                               <div class="col-sm-6">
+                                                                  <p class="left">
+                                                                  <span class="name">Ashish Yadav,</span><br>
+                                                                  Chief of Design, an all round concept creator<br>
+                                                                  Ashish brings 10+ years of experience with himself in designing highly functional and intuitive applications. He believes Design to be the biggest ‘Weapon of Mass Inspiration’. As a Head of Design at Walkover, his work is grounded in his deep interest in how people connect through visual communication.
+                                                                  </p>
+                                                              </div>
+                                                              <div class="col-sm-6">
+                                                                        <img src="/assets/images/team/aashish-big.png" alt="" class="pull-right"> 
+                                                               </div>
+                                                        </div>
+                                                   </div>
+                                                   <div class="mentors-info m-t-70">
+                                                         <div class="row">
+                                                               <div class="col-sm-6">
+                                                                        <img src="/assets/images/team/priyanka.png" alt=""> 
+                                                               </div>
+                                                               <div class="col-sm-6 p-zero">
+                                                                  <p>
+                                                                        <span class="name">Priyanka Pathak,</span><br> Technology Geek<br><br>With zeros and ones coursing through her brain and blood, Priyanka has more than 7 years of experience in application development with ThoughtWorks. One part idea brewer and one part geek, she is fondly known as the Black Widow of Walkover.
+                                                                  </p>
+                                                              </div>
+                                                        </div>
+                                                   </div>
+                                                   <div class="mentors-info m-t-70">
+                                                         <div class="row">
+                                                               <div class="col-sm-6">
+                                                                  <p class="left">
+                                                                        <span class="name">Ravindra Dangi,</span><br> a sales buff.<br><br> Ravindra, the Director of Sales at MSG91, is a conversational samurai with half a decade worth of experience in sales. Unlike any other sales guy Ravindra loves to be on the phone. He believes the secret to his success in sales is treating clients like his girlfriends, and his girlfriends like clients!
+                                                                  </p>
+                                                              </div>
+                                                              <div class="col-sm-6">
+                                                                        <img src="/assets/images/team/ravindra-big.png" alt="" class="pull-right"> 
+                                                               </div>
+                                                        </div>
+                                                   </div>
+                                                   <div class="mentors-info m-t-70">
+                                                         <div class="row">
+                                                               <div class="col-sm-6">
+                                                                        <img src="/assets/images/team/ankita-big.png" alt=""> 
+                                                               </div>
+                                                               <div class="col-sm-6 p-zero">
+                                                                  <p> 
+                                                                        <span class="name">Ankita Chadha,</span><br> Idea <br><br>With a knack for creating beautiful spaces and bringing together the brightest of minds, Ankita is the perfect blend of a novelist, having written a novel titled Anything Else But Love and an entrepreneur, founding Mitti-Brewing Ideas, a cafe where the thinkers and doers collaborate and let their creative juices flow.
+                                                                  </p>
+                                                              </div>
+                                                        </div>
+                                                   </div>
+                                                   
+                                                   
+                                                   
                                                 </div>
                                           </div>
                                     </div>
@@ -570,9 +750,17 @@
     }
   </script>
   <script>
-$('.nav-tabs li a').click(function(e) {
-    e.preventDefault();
+  $(document).ready(function(){
+        
+  $('.nav-tabs li a').click(function(e){
+      e.preventDefault();
+    $('li a').removeClass("activeanchor");
+    $(this).addClass("activeanchor");
 });
+});
+
+
+
 
 //smooth scrolling
 // Select all links with hashes
