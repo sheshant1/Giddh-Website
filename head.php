@@ -8,6 +8,7 @@ echo '<meta charset="UTF-8"/>
   <link href="https://fonts.googleapis.com/css?family=Arvo:400" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css">
   <link href="/styles/new-style.css" rel="stylesheet">
+  <link href="/styles/icomoon-style.css" rel="stylesheet">
   <link href="/bower_components/angular-toastr/dist/angular-toastr.min.css" rel="stylesheet">
   <link href="/bower_components/ui-bootstrap-custom-build/ui-bootstrap-custom-2.5.0-csp.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">';
