@@ -2784,7 +2784,7 @@ figure.member:last-child span.empty{
  }
 body{ 
   background: #EDECEC; 
-  padding:50px;
+/*   padding:50px; */
 }
 
 #page-wrap { 
