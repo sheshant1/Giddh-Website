@@ -172,7 +172,7 @@
                                                         <p class="product-info">
                                                             We are the leaders that solve problems from the perspective of the customer's experiences. Before wearing our corporate jacket, we wear our customer’s shoes to provide them the solutions they need.
                                                         </p>
-                                                        <img src="../assets/images/about/customer.svg" alt="" class="customer-big">
+                                                        <span class="icon icon-custcome"></span>
                                                   </div>
                                             </div>
                                           </div>
@@ -800,6 +800,7 @@ $('.nav-tab-principle li a[href*="#"]')
     }
   });
 </script>
+
 
   
 </body>
