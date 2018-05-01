@@ -15,23 +15,27 @@ body {
 @font-face {
   font-family: 'RobotoLight';
   src: url('../assets/fonts/Roboto-Light.ttf');
+  src: url('../assets/fonts/Roboto-Light.woff');
  
 }
 
 @font-face {
   font-family: 'RobotoMedium';
   src: url('../assets/fonts/Roboto-Medium.ttf');
+  src: url('../assets/fonts/Roboto-Medium.woff');
  
 }
 
 @font-face {
   font-family: 'RobotoBold';
   src: url('../assets/fonts/Roboto-Bold.ttf');
+  src: url('../assets/fonts/Roboto-Bold.woff');
   
 }
 @font-face {
   font-family: 'RobotoRegular';
   src: url('../assets/fonts/Roboto-Regular.ttf');
+  src: url('../assets/fonts/Roboto-Regular.woff');
   
 }
 
@@ -520,7 +524,10 @@ a.anchBtn {
 }
 .navbar-brand{
 	height: 80px;
-	padding: 10px 15px;
+	padding: 13px 15px !important;
+}
+.navbar-brand img{
+  width:160px;
 }
 .navbar .navbar-nav{
 	padding-top: 12px;
@@ -2344,7 +2351,12 @@ button.toast-close-button {
   text-align:center;
   padding:0 !important;
   text-decoration: none !important;
-  margin:0 16px;
+  margin:0 18px !important;
+  margin-left:0 !important;
+}
+
+.nav-tabs-values li a:hover{
+  color:#E34B26 !important;
 }
 .nav-tabs-values li a:hover{
   background: transparent !important;
@@ -2353,10 +2365,15 @@ button.toast-close-button {
 .nav-tabs-values li.active a{
   background:transparent !important;
   border:none !important;
-  font-weight:bold;
   color:#E34B26 !important;
 }
+
 .area-flex{
+  display:flex; 
+  align-items:center; 
+  justify-content: left;
+}
+.area-flex.center{
   display:flex; 
   align-items:center; 
   justify-content: center;
@@ -2388,9 +2405,10 @@ button.toast-close-button {
    font-weight:500;
   }
 .nav-tabs-about > li.active > a, .nav-tabs-about > li > a:hover { 
-  border: none !important;
+    border: none !important;
     background: transparent !important; 
     border:1px solid transparent !important; 
+    color:#E34B26;
    }
 .nav-tabs-about > li > a::after {
    content: ""; background: #E34B26; 
@@ -2400,6 +2418,18 @@ button.toast-close-button {
   }
 .nav-tabs-about > li.active > a::after{ 
   transform: scale(1); 
+}
+.website-link{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.know-more-link{
+  z-index: 2;
+  position: relative;
 }
 
 
@@ -2480,15 +2510,16 @@ button.toast-close-button {
 }
 .about-content-body .product{
   background: #FFF;
-  padding:90px 0 125px 0;
+  padding:80px 0 125px 0;
   font-family: 'RobotoRegular';
 }
 .about-content-body .product h1{
-  font-size:50px;
+  font-size:45px;
   font-family: 'RobotoMedium';
   color:#26263A;
   position:relative;
-  line-height: 70px;
+  margin-top:0;
+  /* line-height: 70px; */
 }
 
 .about-content-body .product h1:after{
@@ -2499,6 +2530,7 @@ button.toast-close-button {
  bottom:0;
  left:0;
  content:"";
+ top:56px;
 }
 .about-content-body .tab-content{
   padding:0;
@@ -2566,9 +2598,11 @@ button.toast-close-button {
   font-family: 'RobotoMedium';
   color:#26263A;
   position:relative;
-  margin-bottom:109px;
+  margin-bottom:65px;
+  margin-top:0;
+  text-align: center;
 }
-.see-company h1:after{
+.see-company h1 span:after{
   position:absolute;
   width:80px;
   height:4px;
@@ -2576,6 +2610,7 @@ button.toast-close-button {
   bottom:0;
   left:41%;
   content:"";
+  top:54px;
  }
  .theTeam{
    padding:90px 0;
@@ -2595,6 +2630,7 @@ button.toast-close-button {
   bottom:0;
   left:41%;
   content:"";
+  top:56px;
  }
  .theTeam .product-info{
   font-size:18px;
@@ -2634,9 +2670,9 @@ figure.member .member-footer{
   font-size: 10px;
 }
 .founder{
-  background:url('/assets/images/team/shubendra-big.png') 0 0 no-repeat;
+  background:url('/assets/images/team/shubendra-big-new.jpg') 0 0 no-repeat;
   background-size:cover;
-  padding:78px 0 102px 133px;
+  padding:78px 0 102px 0;
 }
 .founder h1 {
   font-size:50px;
@@ -2646,7 +2682,7 @@ figure.member .member-footer{
   margin-bottom:64px;
 }
 .founder p{
-  width:50%;
+  width:54%;
   line-height: 31px;
   font-size:18px;
   color:#fff;
@@ -2668,7 +2704,7 @@ figure.member .member-footer{
 
 
 figure.member:last-child{
-  border:1px solid #707070;
+  border:1px solid rgba(38, 38, 58, 0.2);
   font-size:20px;
   text-align: center;
 }
@@ -2676,7 +2712,7 @@ figure.member:last-child{
 figure.member:last-child span.empty{
   vertical-align: middle;
   position: relative;
-  top: 25%;
+  top: 28%;
   line-height: 24px;
 }
 .p-zero{
@@ -2694,13 +2730,13 @@ figure.member:last-child span.empty{
   margin-bottom:64px;
 }
 .see-company .btn-default{
-  min-width:250px;
-  height:60px;
-  border-radius:0;
-  border:1px solid rgba(38, 38, 58, 0.3);
-  font-size:26px;
+  min-width: 250px;
+  height: 60px;
+  border-radius: 0;
+  border: 1px solid rgba(38, 38, 58, 0.3);
+  font-size: 22px;
   font-family: 'RobotoMedium';
-  margin-right:50px;
+  margin-right: 50px;
 }
 .mt50{
   margin-top:50px;
@@ -2718,7 +2754,8 @@ figure.member:last-child span.empty{
   margin:65px 0 90px 0;
 }
 .about-content-body .mentors-info{
-  border:1px solid #707070;
+  border:1px solid rgba(38, 38, 58, 0.2);
+  max-height:358px;
 }
 .about-content-body .mentors-info p{
   font-size:18px;
@@ -2782,10 +2819,6 @@ figure.member:last-child span.empty{
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); 
   margin-bottom: 30px;
  }
-body{ 
-  background: #EDECEC; 
-  padding:50px;
-}
 
 #page-wrap { 
   max-width: 100%;
@@ -2799,6 +2832,15 @@ body{
   display: block;
   position: relative;
   background-size:100% 100% !important;
+}
+.product:focus{
+  outline:none !important;
+}
+.product .row:focus{
+  outline:none !important;
+}
+.figure:focus{
+  outline:none !important;
 }
 .figure.bgNurture{
   background:url('../assets/images/our_principle/Nurture.jpg') 0 0 no-repeat;
@@ -2840,10 +2882,10 @@ body{
   position: absolute;
   top:60px;
   right:0;
-  padding:5px 52px;
+  padding:5px 52px 5px 32px;
   background:rgba(17,17,17,0.4);
   z-index: 1;
-  width: 90%;
+  width: 80%;
 }
 .figure .topSection p.left {
   color: #FFF !important;
@@ -2851,9 +2893,10 @@ body{
   padding-right: 50px;
   display: inline-block;
   vertical-align: top;
-  padding: 27px 27px 27px 47px;
+  padding: 26px 27px 26px 0;
   margin-bottom: 0;
-  line-height:45px;
+  line-height: 45px;
+  min-width:378px;
 }
 .figure .topSection p.left span{
   vertical-align:middle;
@@ -2871,13 +2914,18 @@ margin-right:23px;
 }
 .figure .topSection p.right{
   display: inline-block;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8) !important;
   margin-bottom: 0;
-  font-size:22px;
-  line-height:30px;
-  width:64%;
-  padding:0;
-  margin:25px 0 0 47px;
+  font-size: 22px;
+  line-height: 30px;
+  width:66%;
+  padding: 0;
+  margin: 0 0 0 47px;
+}
+.container-principle{
+  margin-left:0 !important;
+  display: flex;
+  align-items:center;
 }
 
 .p-t-0{
@@ -2885,6 +2933,10 @@ margin-right:23px;
 }
 .p-b-0{
   padding-bottom:0 !important;
+}
+.nav-tabs-footer{
+  width: 850px;
+  margin: auto !important;
 }
 .nav-tabs-footer > li > a:hover{
   border:1px solid #E34B26 !important;
@@ -2897,6 +2949,11 @@ margin-right:23px;
 .nav-tabs-footer > li.remove a{
   border-bottom:transparent !important;
 }
+.nav-tabs-values li.active a span, .navs-principle li.active a span {
+  background: rgba(227, 75, 38, 0.6)  !important;
+  color: #fff !important;
+}
+
 .activeanchor span{
   display: block;
   background: #E34B26;
@@ -2904,9 +2961,17 @@ margin-right:23px;
   width:100px;
   height:100px;
 }
+.navbar{
+  border-radius:0 !important;
+}
+.navs-principle > li > a{
+  padding:0 4px !important;
+  min-width:104px;
+}
 
 @media only screen and (max-width:1367px){
   .figure .topSection p.right{
   font-size:17px;
   }
 }
+
