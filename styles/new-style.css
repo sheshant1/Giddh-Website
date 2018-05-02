@@ -2820,6 +2820,10 @@ figure.member:last-child span.empty{
   margin-bottom: 30px;
  }
 
+body{ 
+  background: #EDECEC; 
+}
+
 #page-wrap { 
   max-width: 100%;
   width:100%; 
