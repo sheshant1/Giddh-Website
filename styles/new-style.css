@@ -2465,7 +2465,7 @@ button.toast-close-button {
 }
 
 .about-content-head span{
-  font-family:"Roboto-Regular";
+  font-family:"RobotoRegular";
   font-size:24px;
   color:#FFFFFF;
   margin-left:42px;
@@ -2621,6 +2621,7 @@ button.toast-close-button {
   color:#26263A;
   position:relative;
   margin-bottom:64px;
+  margin-top:0;
 }
 .theTeam h1:after{
   position:absolute;
@@ -2943,7 +2944,7 @@ margin-right:23px;
   margin: auto !important;
 }
 .nav-tabs-footer > li > a:hover{
-  border:1px solid #E34B26 !important;
+  
   background:#fff !important;
   color:#E34B26 !important;
 }
@@ -2977,5 +2978,137 @@ margin-right:23px;
   .figure .topSection p.right{
   font-size:17px;
   }
+}
+@media only screen and (max-width:900px){
+  .nav-tabs-footer{
+    width:100%;
+  }
+  .nav-tabs.nav-tabs-footer{
+    text-align: center;
+  }
+  .nav-tabs.nav-tabs-footer > li{
+    float: none !important;
+    margin-top:10px;
+  }
+  .product .product-info{
+    margin-bottom: 0;
+    width:100%;
+  }
+  .product .walkover-logo{
+    float:left;
+    margin-top:0;
+  }
+  .see-company .btn-default{
+    min-width:191px;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .area-flex{
+    display: block;
+  }
+  .about-content-head span{
+    margin-left:0;
+  }
+  .about-content-head h1:after{
+    background:none;
+  }
+  .nav-tabs-footer{
+    width:100%;
+  }
+  .nav-tabs.nav-tabs-footer{
+    text-align: center;
+  }
+  .nav-tabs.nav-tabs-footer > li{
+    float: none !important;
+    margin-top:10px;
+  }
+  .about-content-body .product h1:after{
+    background:none;
+  }
+  .product .product-info{
+    width:100%;
+  }
+  .about-content-body .product{
+    margin-top:60px;
+  }
+  .product-info{
+    margin-bottom:0 !important;
+  }
+  .product .walkover-logo{
+    margin-top:0;
+    float:left;
+  }
+  .see-company .btn-default{
+    margin-right:0;
+  }
+  .customer-big{
+    float: left;
+    margin-top: 40px;
+  }
+  .container-principle{
+    display: block;
+  }
+  .figure .topSection{
+    width:100%;
+    left:0;
+    padding:0;
+    top:0;
+  }
+  .figure .topSection p.left{
+    min-width:100%;
+    text-align: center;
+  }
+  .figure .topSection p.left .icon{
+    display: block;
+  }
+  .figure .topSection p.left{
+    border-right:none;
+  }
+  .about-content-head h1{
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+  .about-content-head span{
+    margin-left:10px;
+  }
+  .theTeam h1{
+    text-align:center;
+    margin:20px 0;
+  }
+  .theTeam h1:after{
+    background: none;
+  }
+  .product-info img{
+    max-width:100%;
+  }
+  .about-content-body .mentors-info img{
+    max-width:100%;
+  }
+  .about-content-body .mentors-info{
+    max-height:100%;
+  }
+  .about-content-body .mentors-info p{
+    width: 95%;
+    padding: 20px 30px;
+  }
+  .founder p{
+    width: 100%;
+    margin-left: 10px;
+  }
+  .mentors-info .col-sm-6{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
+
+@media only screen and (min-width:1000px) and (max-width:1367px){
+  .figure .topSection{
+    right: -37px;
+    width: 100%;
+}
 }
 

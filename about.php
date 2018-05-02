@@ -10,7 +10,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   
-
+<style>
+      html, body{
+            overflow-x:hidden;
+      }
+</style>
 </head>
 <body  ng-controller="homeController as vm" id="aboutPage" class="about-section-body lightTrans notAffix">
   
@@ -24,14 +28,12 @@
                         <div class="row">
                             <div class="col-md-12">
                                           <div class="area-flex center">
-                                              <ul class="nav nav-tabs nav-tabs-about" role="tablist">
-                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'about', 'remove':vm.selectedTab !== 'about'}"><a href="#about" aria-controls="about" role="tab" data-toggle="tab" class="one" ng-click="vm.selectedTab !== 'about'">About Us</a></li>
-                                                  
-                                                  <li role="presentation" ng-class="{'remove':vm.selectedTab !== 'values'}"><a href="#values" aria-controls="profile" role="tab" data-toggle="tab" class="two" ng-click="vm.selectedTab = 'values'" >Our Values</a></li>
+                                          <ul class="nav nav-tabs nav-tabs-about" role="tablist">
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'about'}"><a href="javascript:void(0)" aria-controls="about" role="tab" data-toggle="tab" class="one" ng-click="vm.selectedTab = 'about'">About Us</a></li>
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'values'}"><a href="javascript:void(0)" aria-controls="profile" role="tab" data-toggle="tab" class="two" ng-click="vm.selectedTab = 'values'">Our Values</a></li>
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'principle'}"><a href="javascript:void(0)" aria-controls="principle" role="tab" data-toggle="tab" class="three" ng-click="vm.selectedTab = 'principle'">Leadership Principles</a></li>
 
-                                                  <li role="presentation" ng-class="{'remove':vm.selectedTab !== 'principle'}"><a href="#principle" aria-controls="principle" role="tab" data-toggle="tab" class="three" ng-click="vm.selectedTab = 'principle'" >Leadership Principles</a></li>
-
-                                                  <li role="presentation" ng-class="{'remove':vm.selectedTab !== 'team'}"><a href="#team" aria-controls="settings" role="tab" data-toggle="tab" class="four" ng-click="vm.selectedTab = 'team'">The Team</a></li>
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'team'}" ><a href="javascript:void(0)" aria-controls="settings" role="tab" data-toggle="tab" class="four" ng-click="vm.selectedTab = 'team'">The Team</a></li>
                                               </ul>
 
                                         
@@ -42,7 +44,7 @@
             </div>
           <div class="tab-content about-tab-content">
             <!-- about section -->
-            <div class="about-content tab-pane active" id="about">
+            <div class="about-content tab-pane active" id="about" ng-class="{'active':vm.selectedTab == 'about'}">
                   <div class="about-content-head">
                       <div class="container area-flex">
                             <h1>About Us</h1>
@@ -77,7 +79,7 @@
                               </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
                             <a href="http://www.msg91.com/" target="_blank" class="website-link"></a>
                                           <div class="thumbnail">
                                                 <img src="../assets/images/msg-logo-big.svg" alt="msg" class="msg">
@@ -92,8 +94,8 @@
 
                               </div>
                             
-                            <div class="col-md-6">
-                            <a href="http://www.msg91.com/" target="_blank" class="website-link"></a>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                            <a href="http://www.viasocket.com/" target="_blank" class="website-link"></a>
                               <div class="thumbnail pull-right">
                                   <img src="../assets/images/socket-logo-big.svg" class="socket" alt="socket">
                                   <div class="caption">
@@ -113,7 +115,7 @@
             </div>
             <!-- about end -->
             <!-- our values -->
-            <div class="about-content tab-pane" id="values">
+            <div class="about-content tab-pane" id="values" ng-class="{'active':vm.selectedTab == 'values'}">
                   <div class="about-content-head">
                       <div class="container area-flex">
                             <h1>Our Values</h1>
@@ -332,7 +334,7 @@
             <!-- our values end -->
 
               <!-- our principle start -->
-              <div class="about-content tab-pane" id="principle">
+              <div class="about-content tab-pane" id="principle" ng-class="{'active':vm.selectedTab == 'principle'}">
                   <div class="about-content-head">
                       <div class="container area-flex">
                             <h1 class="twoline">Leadership Principles</h1>
@@ -529,7 +531,7 @@
               </div>
             <!-- our principle end -->
               <!-- the team start    -->
-                  <div class="about-content tab-pane" id="team">
+                  <div class="about-content tab-pane" id="team" ng-class="{'active':vm.selectedTab == 'team'}">
                               <div class="about-content-head team-head">
                                     <div class="container area-flex  p-zero">
                                           <h1>The Team</h1>
@@ -623,8 +625,8 @@
                                                 <div class="col-sm-12 p-zero">
                                                             <h1 class="head-left">Founder</h1>
                                                             <p>
-                                                                  <span class="name">Shubhendra Agarwal,</span><br>
-                                                                  Founder, Tech Visionary<br><br>Shubhendra Agarwal is the founder of Giddh. An entrepreneur at heart and an engineer by choice, he founded Giddh in 2016 with the idea of unifying accounting with automation. Prior to Giddh, Shubhendra was the co-founder and CFO of MSG91, one of India’s top 5 messaging solutions firm.<br><br>
+                                                                  <span class="name">Shubhendra Agrawal,</span><br>
+                                                                  Founder, Tech Visionary<br><br>Shubhendra Agrawal is the founder of Giddh. An entrepreneur at heart and an engineer by choice, he founded Giddh in 2016 with the idea of unifying accounting with automation. Prior to Giddh, Shubhendra was the co-founder and CFO of MSG91, one of India’s top 5 messaging solutions firm.<br><br>
                                                                   With experience lasting over a decade in engineering, he has been a keen analyser of consumer behavior helping him cultivate a team that creates simple yet highly functional IT products.
                                                             </p>
                                                       </div>
@@ -646,7 +648,7 @@
                                                                </div>
                                                                <div class="col-sm-6 p-zero">
                                                                   <p>
-                                                                        <span class="name">Puspendra Agarwal,</span><br> Idea Guy, Technology Geek<br><br>A calculated risk-taker with passion for everything numbers, Pushpendra is an IMT pass out, and the founder of Walkover. Over the years Pushpendra has perfected the art of crafting the most efficient code and believes apathy to be a man’s biggest foe and time to be his biggest ally.
+                                                                        <span class="name">Puspendra Agrawal,</span><br> Idea Guy, Technology Geek<br><br>A calculated risk-taker with passion for everything numbers, Pushpendra is an IMT pass out, and the founder of Walkover. Over the years Pushpendra has perfected the art of crafting the most efficient code and believes apathy to be a man’s biggest foe and time to be his biggest ally.
                                                                   </p>
                                                               </div>
                                                         </div>
@@ -721,15 +723,15 @@
                             <p class="text-primary">See more about the Company</p>
                             <p class="text-secondry">Learn more about how Giddh can provide the solution you need.</p>
                           </div>
-                        <div class="col-sm-10 col-sm-offset-1">
-                              <ul class="nav nav-tabs nav-tabs-footer area-flex wd-100per noborder" role="tablist">
-                                    <li role="presentation" class="active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab" class="one btn btn-default" ng-click="vm.selectedTab = 'about'" ng-show="vm.selectedTab != 'about'">About Us</a></li>
+                        <div class="col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                        <ul class="nav nav-tabs nav-tabs-footer area-flex wd-100per noborder" role="tablist">
+                                    <li role="presentation" class="active"><a href="javascript:void(0)" aria-controls="about" role="tab" data-toggle="tab" class="one btn btn-default" ng-click="vm.selectedTab = 'about'" ng-show="vm.selectedTab != 'about'">About Us</a></li>
                                     
-                                    <li role="presentation"><a href="#values" aria-controls="profile" role="tab" data-toggle="tab" class="two btn btn-default" ng-click="vm.selectedTab = 'values'" ng-show="vm.selectedTab != 'values'">Our Values</a></li>
+                                    <li role="presentation"><a href="javascript:void(0)" aria-controls="profile" role="tab" data-toggle="tab" class="two btn btn-default" ng-click="vm.selectedTab = 'values'" ng-show="vm.selectedTab != 'values'">Our Values</a></li>
 
-                                    <li role="presentation"><a href="#principle" aria-controls="principle" role="tab" data-toggle="tab" class="three btn btn-default" ng-click="vm.selectedTab = 'principle'" ng-show="vm.selectedTab != 'principle'">Leadership Principles</a></li>
+                                    <li role="presentation"><a href="javascript:void(0)" aria-controls="principle" role="tab" data-toggle="tab" class="three btn btn-default" ng-click="vm.selectedTab = 'principle'" ng-show="vm.selectedTab != 'principle'">Leadership Principles</a></li>
 
-                                    <li role="presentation"><a href="#team" aria-controls="settings" role="tab" data-toggle="tab" class="four btn btn-default"  ng-click="vm.selectedTab = 'team'" ng-show="vm.selectedTab != 'team'">The Team</a></li>
+                                    <li role="presentation"><a href="javascript:void(0)" aria-controls="settings" role="tab" data-toggle="tab" class="four btn btn-default"  ng-click="vm.selectedTab = 'team'" ng-show="vm.selectedTab != 'team'">The Team</a></li>
                               </ul>
                         </div>
 
@@ -773,13 +775,14 @@
   <script>
   $(document).ready(function(){
         
-  $('.nav-tabs li a').click(function(e){
-      e.preventDefault();
-});
+//  
+$("html, body").animate({ scrollTop: 0 }, "slow");
 });
 
-$('.nav-tabs-footer li a').click(function(e){
- $(body).scroll(0,0);
+$('.nav-tabs-footer li a').click(function(){
+//  $('html, body').scroll(0,0);
+// $('html,body').scroll(0, 'slow');
+$("html, body").animate({ scrollTop: 0 }, 0);
 });
 
 
