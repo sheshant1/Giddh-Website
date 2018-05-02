@@ -778,8 +778,12 @@
 //  
 $("html, body").animate({ scrollTop: 0 }, "slow");
 });
+$(".nav-tabs-values li a").click(function(e){
+      e.preventDefault();
+})
 
 $('.nav-tabs-footer li a').click(function(){
+         
 //  $('html, body').scroll(0,0);
 // $('html,body').scroll(0, 'slow');
 $("html, body").animate({ scrollTop: 0 }, 0);
