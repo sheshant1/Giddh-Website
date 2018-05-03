@@ -52,7 +52,7 @@
                       </div>
                   </div>
                     <div class="about-content-body">
-                      <div class="about">
+                      <div class="about" >
                                 <div class="container">
                                             <div class="tab-content">
                                                     <div class="about-text"><span class="company">Giddh</span> is a team with members who have accounting running in their blood, be it a member of development team or sales team. We are working relentlessly to push forward the automation revolution in bookkeeping industry with our tech solutions.<br><br>
@@ -123,7 +123,7 @@
                       </div>
                   </div>
                     <div class="about-content-body">
-                      <div class="about">
+                      <div class="about" id="about-company">
                                 <div class="container">
                                             <div class="tab-content">
                                                 <!-- start secondry tabs -->
@@ -385,140 +385,158 @@
                                     <div class="product p-t-0 p-b-0">
                                     <div class="row" id="Nurture">
                                           <div class="figure bgNurture">
-                                              <div class="topSection">
-                                                <div class="container container-principle">
-                                                   <p class="left">
-                                                         <span class="icon icon-Nurtures"></span>
-                                                         <span class="heading">Nurtures <br>Collaboration</span>
-                                                      </p>
-                                                   <p class="right">
-                                                      A good leader always nurtures collaboration and acts as an active
-                                                      part in the process of co-creation with his team and the entire
-                                                      ecosystem. A bad leader fails to grasp the importance of
-                                                      collaboration and thus fails himself and his team.
-                                                   </p>
-                                                   </div>
-                                              </div>     
+                                                <div class="container">
+                                                      <div class="topSection">
+                                                                  <div class="container-principle">
+                                                                        <p class="left">
+                                                                              <span class="icon icon-Nurtures"></span>
+                                                                              <span class="heading">Nurtures <br>Collaboration</span>
+                                                                              </p>
+                                                                        <p class="right">
+                                                                              A good leader always nurtures collaboration and acts as an active
+                                                                              part in the process of co-creation with his team and the entire
+                                                                              ecosystem. A bad leader fails to grasp the importance of
+                                                                              collaboration and thus fails himself and his team.
+                                                                        </p>
+                                                                  </div>
+                                                      </div> 
+                                              </div>    
                                           </div>
                                     </div>
                                     <div class="row" id="lcommunication">
                                           <div class="figure bgLeads">
-                                                <div class="topSection">
-                                                    <div class="container container-principle">
-                                                      <p class="left">
-                                                            <span class="icon icon-Communication"></span>
-                                                            <span class="heading">Leads through<br> Communication</span>
-                                                            </p>
-                                                      <p class="right">
-                                                      A Good leader creates an environment that promotes honest and open communications without the fear of judgement. A bad leaders creates an hostile environment that restricts open lines of communication.
-                                                      </p>
-                                                    </div>
-                                                </div>     
+                                                <div class="container">
+                                                            <div class="topSection">
+                                                            <div class="container-principle">
+                                                                  <p class="left">
+                                                                        <span class="icon icon-Communication"></span>
+                                                                        <span class="heading">Leads through<br> Communication</span>
+                                                                        </p>
+                                                                  <p class="right">
+                                                                  A Good leader creates an environment that promotes honest and open communications without the fear of judgement. A bad leaders creates an hostile environment that restricts open lines of communication.
+                                                                  </p>
+                                                            </div>
+                                                            </div> 
+                                                </div>    
                                           </div>
                                     </div>
                                     <div class="row" id="lexample">
                                           <div class="figure bgLeadsExa">
-                                                <div class="topSection">
-                                                   <div class="container container-principle">
-                                                      <p class="left">
-                                                            <span class="icon icon-Leads"></span>
-                                                            <span class="heading">Leads By Example</span>
-                                                            </p>
-                                                      <p class="right">
-                                                            A good leader always leads by example. He is the first to take actions, sets milestones and then encourages his team follow. A bad leader is passive and fails to take initiative.
-                                                      </p>
-                                                      </div>
-                                                </div>     
+                                                <div class="container">
+                                                            <div class="topSection">
+                                                            <div class="container-principle">
+                                                                  <p class="left">
+                                                                        <span class="icon icon-Leads"></span>
+                                                                        <span class="heading">Leads By Example</span>
+                                                                        </p>
+                                                                  <p class="right">
+                                                                        A good leader always leads by example. He is the first to take actions, sets milestones and then encourages his team follow. A bad leader is passive and fails to take initiative.
+                                                                  </p>
+                                                                  </div>
+                                                            </div>  
+                                                </div>   
                                           </div>
                                     </div>
                                     <div class="row" id="consults">
                                           <div class="figure bgConsult">
-                                                <div class="topSection">
-                                                  <div class="container container-principle">
-                                                      <p class="left">
-                                                            <span class="icon icon-consult"></span>
-                                                            <span class="heading">Consults and<br> Delegates</span>
-                                                            </p>
-                                                      <p class="right">
-                                                      A good leader has the ability to seek consultation from his subordinates and also at the same time has the ability to assign responsibilities to the right employees keeping their skills into account. A bad leader is a bad judge of skill set in his personnel and delegates poorly.
-                                                      </p>
-                                                    </div>
-                                                </div>     
+                                                <div class="container">
+                                                            <div class="topSection">
+                                                            <div class="container-principle">
+                                                                  <p class="left">
+                                                                        <span class="icon icon-consult"></span>
+                                                                        <span class="heading">Consults and<br> Delegates</span>
+                                                                        </p>
+                                                                  <p class="right">
+                                                                  A good leader has the ability to seek consultation from his subordinates and also at the same time has the ability to assign responsibilities to the right employees keeping their skills into account. A bad leader is a bad judge of skill set in his personnel and delegates poorly.
+                                                                  </p>
+                                                            </div>
+                                                            </div> 
+                                                </div>    
                                           </div>
                                     </div>
                                     <div class="row" id="courageous">
                                           <div class="figure bgCouragious">
-                                                <div class="topSection">
-                                                   <div class="container container-principle">
-                                                      <p class="left">
-                                                            <span class="icon icon-Courageous"></span>
-                                                            <span class="heading">Is Courageous</span>
+                                                <div class="container">
+                                                      <div class="topSection">
+                                                      <div class="container-principle">
+                                                            <p class="left">
+                                                                  <span class="icon icon-Courageous"></span>
+                                                                  <span class="heading">Is Courageous</span>
+                                                                  </p>
+                                                            <p class="right">
+                                                                  A good leader has the strength of self to act with intention on behalf of the common good. A bad leader does not possess the courage to take a stand during adversity.
                                                             </p>
-                                                      <p class="right">
-                                                            A good leader has the strength of self to act with intention on behalf of the common good. A bad leader does not possess the courage to take a stand during adversity.
-                                                      </p>
-                                                    </div>
-                                                </div>     
+                                                      </div>
+                                                      </div>     
+                                                </div>
                                           </div>
                                     </div>
                                     <div class="row" id="integrity">
                                           <div class="figure bgIntergrity">
-                                                <div class="topSection">
-                                                  <div class="container container-principle">
-                                                      <p class="left">
-                                                            <span class="icon icon-integrity"></span>
-                                                            <span class="heading">Adds Integrity</span>
+                                                <div class="container">
+                                                      <div class="topSection">
+                                                      <div class="container-principle">
+                                                            <p class="left">
+                                                                  <span class="icon icon-integrity"></span>
+                                                                  <span class="heading">Adds Integrity</span>
+                                                                  </p>
+                                                            <p class="right">
+                                                                  A good leader has moral courage, ethical strength, and trustworthiness. He is able to keep promises and fulfill expectations. A bad leader lacks integrity that inspires his team to take ethical measures in all their actions.
                                                             </p>
-                                                      <p class="right">
-                                                            A good leader has moral courage, ethical strength, and trustworthiness. He is able to keep promises and fulfill expectations. A bad leader lacks integrity that inspires his team to take ethical measures in all their actions.
-                                                      </p>
-                                                   </div>
-                                                </div>     
+                                                      </div>
+                                                      </div> 
+                                                </div>    
                                           </div>
                                     </div>
                                     <div class="row" id="serves">
                                           <div class="figure bgServes">
-                                                <div class="topSection">
-                                                   <div class="container container-principle">
-                                                      <p class="left">
-                                                            <span class="icon icon-ServeGood"></span>
-                                                            <span class="heading">Serves for the<br> Greater Good</span>
+                                                <div class="container">
+                                                      <div class="topSection">
+                                                      <div class="container-principle">
+                                                            <p class="left">
+                                                                  <span class="icon icon-ServeGood"></span>
+                                                                  <span class="heading">Serves for the<br> Greater Good</span>
+                                                                  </p>
+                                                            <p class="right">
+                                                                  A good leader shows commitment that extends beyond one’s own self interest; personal humility for the sake of a greater cause. A bad leader is self serving and does not believe in serving for a greater good.
                                                             </p>
-                                                      <p class="right">
-                                                            A good leader shows commitment that extends beyond one’s own self interest; personal humility for the sake of a greater cause. A bad leader is self serving and does not believe in serving for a greater good.
-                                                      </p>
-                                                   </div>
-                                                </div>     
+                                                      </div>
+                                                      </div>  
+                                                </div>   
                                           </div>
                                     </div>
                                     <div class="row" id="process">
                                           <div class="figure bgDefine">
-                                                <div class="topSection">
-                                                   <div class="container container-principle">
-                                                      <p class="left">
-                                                            <span class="icon icon-process"></span>
-                                                            <span class="heading">Defines and<br> Creates Processes</span>
+                                                <div class="container">
+                                                      <div class="topSection">
+                                                      <div class="container-principle">
+                                                            <p class="left">
+                                                                  <span class="icon icon-process"></span>
+                                                                  <span class="heading">Defines and<br> Creates Processes</span>
+                                                                  </p>
+                                                            <p class="right">
+                                                                  A good leader creates new processes before indulging into a new project and makes sure to change that process if it is rectifiable. A bad leader takes the shortest path to complete a project without rectifying the process.
                                                             </p>
-                                                      <p class="right">
-                                                            A good leader creates new processes before indulging into a new project and makes sure to change that process if it is rectifiable. A bad leader takes the shortest path to complete a project without rectifying the process.
-                                                      </p>
-                                                    </div>
-                                                </div>     
+                                                      </div>
+                                                      </div> 
+                                                </div>    
                                           </div>
                                     </div>
                                     <div class="row" id="evolve">
                                           <div class="figure bgAdapts">
-                                                <div class="topSection">
-                                                   <div class="container container-principle">
-                                                            <p class="left">
-                                                                  <span class="icon icon-evolve"></span>
-                                                                  <span class="heading">Adapts to Evolve</span>
+                                                <div class="container">
+                                                      <div class="topSection">
+                                                      <div class="container-principle">
+                                                                  <p class="left">
+                                                                        <span class="icon icon-evolve"></span>
+                                                                        <span class="heading">Adapts to Evolve</span>
+                                                                        </p>
+                                                                  <p class="right">
+                                                                        A good leader uses his experience to recognize different situations and take actions according to the context. A bad leader make the mistake of taking the same actions regardless of the facts.
                                                                   </p>
-                                                            <p class="right">
-                                                                  A good leader uses his experience to recognize different situations and take actions according to the context. A bad leader make the mistake of taking the same actions regardless of the facts.
-                                                            </p>
-                                                      </div>
-                                                </div>     
+                                                            </div>
+                                                      </div> 
+                                                </div>    
                                           </div>
                                     </div>
 
@@ -579,17 +597,17 @@
                                                             </p>
                                                      </figure>
                                                      <figure class="member">
-                                                           <img src="../assets/images/team/sheba.png" alt="">
+                                                           <img src="../assets/images/team/sagar.png" alt="">
                                                            <p class="member-footer">
-                                                                 <span class="name">Sheba</span>
-                                                                 <span class="designation">Inbound Sales Executive </span>
+                                                                 <span class="name">Sagar</span>
+                                                                 <span class="designation">QA Specialist</span>
                                                             </p>
                                                      </figure>
                                                      <figure class="member">
-                                                           <img src="../assets/images/team/jay.png" alt="">
+                                                           <img src="../assets/images/team/mustafa.png" alt="">
                                                            <p class="member-footer">
-                                                                 <span class="name">Jay</span>
-                                                                 <span class="designation">Java Developer</span>
+                                                                 <span class="name">Mustafa</span>
+                                                                 <span class="designation">UI/UX Designer and Developer</span>
                                                             </p>
                                                      </figure>
                                                      <figure class="member">
@@ -610,11 +628,47 @@
                                                            <img src="../assets/images/team/akshay.png" alt="">
                                                            <p class="member-footer">
                                                                  <span class="name">Akshay</span>
-                                                                 <span class="designation">PSoftware Engineer - Java Developer</span>
+                                                                 <span class="designation">Software Engineer - Java Developer</span>
                                                             </p>
                                                      </figure>
                                                      <figure class="member">
-                                                           <span class="empty">Interested to <br>join our<br> team.</span>
+                                                           <img src="../assets/images/team/arpit.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Arpit</span>
+                                                                 <span class="designation">Full Stack Developer</span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/meghna.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Meghna</span>
+                                                                 <span class="designation">UI/UX Designer</span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/sheba.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Sheba</span>
+                                                                 <span class="designation">Inbound Sales Executive </span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/devendra.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Devendra</span>
+                                                                 <span class="designation">Sales Executive</span>
+                                                            </p>
+                                                     </figure>
+                                                     <figure class="member">
+                                                           <img src="../assets/images/team/pranay.png" alt="">
+                                                           <p class="member-footer">
+                                                                 <span class="name">Pranay</span>
+                                                                 <span class="designation">Sales Executive</span>
+                                                            </p>
+                                                     </figure>
+                                                   
+                                                     <figure class="member">
+                                                           <a href="https://www.walkover.in/career.php" target="_blank" class="empty-link"><span class="empty">Interested to <br>join our<br> team.</span></a>
                                                      </figure>
                                                 </div>
                                           </div>
@@ -779,7 +833,10 @@
 $("html, body").animate({ scrollTop: 0 }, "slow");
 });
 $(".nav-tabs-values li a").click(function(e){
-      e.preventDefault();
+      e.preventDefault();     
+      $('html, body').animate({
+        scrollTop: $("#about-company").offset().top
+      }, 0);
 })
 
 $('.nav-tabs-footer li a').click(function(){
@@ -788,6 +845,7 @@ $('.nav-tabs-footer li a').click(function(){
 // $('html,body').scroll(0, 'slow');
 $("html, body").animate({ scrollTop: 0 }, 0);
 });
+
 
 
 

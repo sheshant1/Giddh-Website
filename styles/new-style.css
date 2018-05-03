@@ -2457,6 +2457,7 @@ button.toast-close-button {
   padding-right: 85px;
   color:rgba(255,255,255,0.2);
   font-family:"RobotoLight";
+  max-width:400px;
 
 }
 .about-content-head h1.twoline{
@@ -2470,6 +2471,7 @@ button.toast-close-button {
   color:#FFFFFF;
   margin-left:42px;
   display: inline-block;
+  text-align: justify;
 }
 .about-content-head h1:after{
   height:100%;
@@ -2545,6 +2547,7 @@ button.toast-close-button {
   width:59%;
   vertical-align: middle;
   float: left;
+  text-align: justify;
 }
 .product .walkover-logo{
   width:316px;
@@ -2814,6 +2817,7 @@ figure.member:last-child span.empty{
 }
 .product .thumbnail{
   max-width:100%;
+  text-align: justify;
 }
 }
 .card { 
@@ -2879,11 +2883,12 @@ body{
   height:100%;
   top:0;
   left:0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.1);
   content:"";
   position: absolute;
+  z-index: 1;
 }
-.figure .topSection{
+/* .figure .topSection{
   position: absolute;
   top:60px;
   right:0;
@@ -2891,6 +2896,21 @@ body{
   background:rgba(17,17,17,0.4);
   z-index: 1;
   width: 80%;
+} */
+.figure .topSection{
+  padding:5px 26px 5px 26px;
+  margin-top:60px;
+  background:rgba(17,17,17,0.4);
+  z-index: 2;
+  width: 100%;
+  z-index:2;
+  position: relative;
+}
+.empty-link{
+  color:#333;
+}
+.empty-link:hover{
+  color:#337ab7;
 }
 .figure .topSection p.left {
   color: #FFF !important;
@@ -2900,14 +2920,14 @@ body{
   vertical-align: top;
   padding: 26px 27px 26px 0;
   margin-bottom: 0;
-  line-height: 45px;
-  min-width:378px;
+  line-height: 35px;
+  min-width:338px;
 }
 .figure .topSection p.left span{
   vertical-align:middle;
 }
 .figure .topSection p.left .icon{
-font-size:90px;
+font-size:80px;
 opacity: 1;
 display: inline-block;
 margin-right:23px;
@@ -2921,11 +2941,11 @@ margin-right:23px;
   display: inline-block;
   color: rgba(255, 255, 255, 0.8) !important;
   margin-bottom: 0;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
   width:66%;
   padding: 0;
-  margin: 0 0 0 47px;
+  margin: 0 0 0 23px;
 }
 .container-principle{
   margin-left:0 !important;
@@ -3006,6 +3026,8 @@ margin-right:23px;
 @media only screen and (max-width:768px){
   .area-flex{
     display: block;
+    text-align:center;
+
   }
   .about-content-head span{
     margin-left:0;
@@ -3028,6 +3050,7 @@ margin-right:23px;
   }
   .product .product-info{
     width:100%;
+    text-align: justify;
   }
   .about-content-body .product{
     margin-top:60px;
