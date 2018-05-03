@@ -447,7 +447,7 @@
                                                                         <span class="heading">Consults and<br> Delegates</span>
                                                                         </p>
                                                                   <p class="right">
-                                                                  A good leader has the ability to seek consultation from his subordinates and also at the same time has the ability to assign responsibilities to the right employees keeping their skills into account. A bad leader is a bad judge of skill set in his personnel and delegates poorly.
+                                                                  A good leader has the ability to seek consultation from subordinates and also has the ability to assign tasks to the right employees taking their skills into account. A bad leader is a bad judge of skill set and delegates poorly.
                                                                   </p>
                                                             </div>
                                                             </div> 
