@@ -736,6 +736,7 @@
                                                                <div class="col-sm-6">
                                                                   <p class="left">
                                                                         <span class="name">Ravindra Dangi,</span><br>Sales Samurai<br><br>Ravindra, the Director of Sales at MSG91, is a conversational samurai with half a decade worth of experience in sales. Unlike any other sales guy Ravindra loves to be on the phone. He believes the secret to his success in sales is treating clients like his girlfriends, and his girlfriends like clients!
+                                                                        
                                                                   </p>
                                                               </div>
                                                               <div class="col-sm-6">
