@@ -4,7 +4,7 @@
   
   <meta name="description" content="Giddh is Online Cloud Based GST ready accounting software & Bookkeeping software. Giddh accounting makes your data secure and available across globe. "/>
   <meta name="keywords" content="About Giddh"/>
-  <meta http-equiv=“Content-Type” content=“text/html; charset=utf-8">
+  <!-- <meta http-equiv=“Content-Type” content=“text/html; charset=utf-8"> -->
   <title>Giddh ~ About Us</title>
   <?php include 'head.php';?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
@@ -677,15 +677,17 @@
                                     <div class="container-fluid">
                                            <div class="row founder theTeam m-t-60">
                                            <div class="container">
-                                                <div class="col-sm-12">
-                                                            <h1 class="head-left">Founder</h1>
-                                                            <p>
-                                                                  <span class="name">Shubhendra Agrawal,</span><br>
-                                                                  Founder, Tech Visionary<br><br>Shubhendra Agrawal is the founder of Giddh. An entrepreneur at heart and an engineer by choice, he founded Giddh in 2016 with the idea of unifying accounting with automation. Prior to Giddh, Shubhendra was the co-founder and CFO of MSG91, one of India’s top 5 messaging solutions firm.<br><br>
-                                                                  With experience lasting over a decade in engineering, he has been a keen analyser of consumer behavior helping him cultivate a team that creates simple yet highly functional IT products.
-                                                            </p>
+                                                <div class="row">
+                                                            <div class="col-sm-12">
+                                                                        <h1 class="head-left">Founder</h1>
+                                                                        <p>
+                                                                              <span class="name">Shubhendra Agrawal,</span><br>
+                                                                              Founder, Tech Visionary<br><br>Shubhendra Agrawal is the founder of Giddh. An entrepreneur at heart and an engineer by choice, he founded Giddh in 2016 with the idea of unifying accounting with automation. Prior to Giddh, Shubhendra was the co-founder and CFO of MSG91, one of India’s top 5 messaging solutions firm.<br><br>
+                                                                              With experience lasting over a decade in engineering, he has been a keen analyser of consumer behavior helping him cultivate a team that creates simple yet highly functional IT products.
+                                                                        </p>
+                                                                  </div>
+                                                            </div>
                                                       </div>
-                                                </div>
                                           </div>
                                     </div>
                                     <div class="container">
