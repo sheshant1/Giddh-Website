@@ -4,6 +4,7 @@
   
   <meta name="description" content="Giddh is Online Cloud Based GST ready accounting software & Bookkeeping software. Giddh accounting makes your data secure and available across globe. "/>
   <meta name="keywords" content="About Giddh"/>
+  <meta http-equiv=“Content-Type” content=“text/html; charset=utf-8">
   <title>Giddh ~ About Us</title>
   <?php include 'head.php';?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
@@ -357,7 +358,7 @@
                                                             <span class="icon icon-Communication"></span>
                                                             Leads through Communication</a></li>
                                                             <li><a href="#lexample"  data-toggle="tab">
-                                                            <span class="icon icon-Leads"></span>
+                                                            <span class="icon icon-leadsByExample"></span>
                                                             Leads By Example</a></li>
                                                             <li><a href="#consults" data-toggle="tab">
                                                             <span class="icon icon-consult"></span>
@@ -375,7 +376,7 @@
                                                             <span class="icon icon-process"></span>
                                                             Defines & Creates Processes</a></li>
                                                             <li><a href="#evolve" data-toggle="tab">
-                                                            <span class="icon icon-evolve"></span>
+                                                            <span class="icon icon-adaptToEvolve"></span>
                                                             Adapts to Evolve</a></li>
                                                       </ul>
                                               </div>
@@ -426,7 +427,7 @@
                                                             <div class="topSection">
                                                             <div class="container-principle">
                                                                   <p class="left">
-                                                                        <span class="icon icon-Leads"></span>
+                                                                        <span class="icon icon-leadsByExample"></span>
                                                                         <span class="heading">Leads By Example</span>
                                                                         </p>
                                                                   <p class="right">
@@ -528,7 +529,7 @@
                                                       <div class="topSection">
                                                       <div class="container-principle">
                                                                   <p class="left">
-                                                                        <span class="icon icon-evolve"></span>
+                                                                        <span class="icon icon-adaptToEvolve"></span>
                                                                         <span class="heading">Adapts to Evolve</span>
                                                                         </p>
                                                                   <p class="right">
@@ -551,7 +552,7 @@
               <!-- the team start    -->
                   <div class="about-content tab-pane" id="team" ng-class="{'active':vm.selectedTab == 'team'}">
                               <div class="about-content-head team-head">
-                                    <div class="container area-flex  p-zero">
+                                    <div class="container area-flex">
                                           <h1>The Team</h1>
                                           <span>
                                                 Our VISION is to provide technologies to organizations that enables them to take data driven financial decisions in the quickest way possible.
@@ -562,12 +563,12 @@
                                     <div class="theTeam">
                                     <div class="container">
                                           <div class="row">
-                                                <div class="col-sm-3 p-zero">
+                                                <div class="col-sm-3">
                                                       <h1 class="head-left">The Team</h1>
                                                 </div>
                                           </div>
                                           <div class="row">
-                                                <div class="col-sm-12 p-zero">
+                                                <div class="col-sm-12">
                                                      <figure class="member">
                                                            <img src="../assets/images/team/alok.png" alt="">
                                                            <p class="member-footer">
@@ -674,9 +675,9 @@
                                           </div>
                                     </div>
                                     <div class="container-fluid">
-                                           <div class="row founder theTeam">
-                                           <div class="container p-zero">
-                                                <div class="col-sm-12 p-zero">
+                                           <div class="row founder theTeam m-t-60">
+                                           <div class="container">
+                                                <div class="col-sm-12">
                                                             <h1 class="head-left">Founder</h1>
                                                             <p>
                                                                   <span class="name">Shubhendra Agrawal,</span><br>
@@ -689,20 +690,20 @@
                                     </div>
                                     <div class="container">
                                           <div class="row">
-                                                <div class="col-sm-3 p-zero">
+                                                <div class="col-sm-3">
                                                       <h1 class="head-left m-t-90">Mentors</h1>
                                                 </div>
                                           </div>
                                           <div class="row">
-                                                <div class="col-sm-12 p-zero">
+                                                <div class="col-sm-12">
                                                    <div class="mentors-info">
                                                          <div class="row">
                                                                <div class="col-sm-6">
                                                                         <img src="/assets/images/team/pushpendra.png" alt=""> 
                                                                </div>
-                                                               <div class="col-sm-6 p-zero">
+                                                               <div class="col-sm-6">
                                                                   <p>
-                                                                        <span class="name">Puspendra Agrawal,</span><br> Idea Guy, Technology Geek<br><br>A calculated risk-taker with passion for everything numbers, Pushpendra is an IMT pass out, and the founder of Walkover. Over the years Pushpendra has perfected the art of crafting the most efficient code and believes apathy to be a man’s biggest foe and time to be his biggest ally.
+                                                                        <span class="name">Puspendra Agrawal,</span><br>Idea Guy, Technology Geek<br><br>A calculated risk-taker with passion for everything numbers, Pushpendra is an IMT pass out, and the founder of Walkover. Over the years Pushpendra has perfected the art of crafting the most efficient code and believes apathy to be a man’s biggest foe and time to be his biggest ally.
                                                                   </p>
                                                               </div>
                                                         </div>
@@ -711,8 +712,7 @@
                                                          <div class="row">
                                                                <div class="col-sm-6">
                                                                   <p class="left">
-                                                                  <span class="name">Ashish Yadav,</span><br>
-                                                                  Concept Creator<br><br>Ashish brings 10+ years of experience with himself in designing highly functional and intuitive applications. He believes Design to be the biggest ‘Weapon of Mass Inspiration’. As a Head of Design at Walkover, his work is grounded in his deep interest in how people connect through visual communication.
+                                                                  <span class="name">Ashish Yadav,</span><br>Concept Creator<br><br>Ashish brings 10+ years of experience with himself in designing highly functional and intuitive applications. He believes Design to be the biggest ‘Weapon of Mass Inspiration’. As a Head of Design at Walkover, his work is grounded in his deep interest in how people connect through visual communication.
                                                                   </p>
                                                               </div>
                                                               <div class="col-sm-6">
@@ -725,9 +725,9 @@
                                                                <div class="col-sm-6">
                                                                         <img src="/assets/images/team/priyanka.png" alt=""> 
                                                                </div>
-                                                               <div class="col-sm-6 p-zero">
+                                                               <div class="col-sm-6">
                                                                   <p>
-                                                                        <span class="name">Priyanka Pathak,</span><br> Technology Geek<br><br>With zeros and ones coursing through her brain and blood, Priyanka has more than 7 years of experience in application development with ThoughtWorks. One part idea brewer and one part geek, she is fondly known as the Black Widow of Walkover.
+                                                                        <span class="name">Priyanka Pathak,</span><br>Technology Geek<br><br>With zeros and ones coursing through her brain and blood, Priyanka has more than 7 years of experience in application development with ThoughtWorks. One part idea brewer and one part geek, she is fondly known as the Black Widow of Walkover.
                                                                   </p>
                                                               </div>
                                                         </div>
@@ -737,6 +737,7 @@
                                                                <div class="col-sm-6">
                                                                   <p class="left">
                                                                         <span class="name">Ravindra Dangi,</span><br>Sales Samurai<br><br>Ravindra, the Director of Sales at MSG91, is a conversational samurai with half a decade worth of experience in sales. Unlike any other sales guy Ravindra loves to be on the phone. He believes the secret to his success in sales is treating clients like his girlfriends, and his girlfriends like clients!
+                                                                        
                                                                   </p>
                                                               </div>
                                                               <div class="col-sm-6">
@@ -749,15 +750,13 @@
                                                                <div class="col-sm-6">
                                                                         <img src="/assets/images/team/ankita-big.png" alt=""> 
                                                                </div>
-                                                               <div class="col-sm-6 p-zero">
+                                                               <div class="col-sm-6">
                                                                   <p> 
                                                                         <span class="name">Ankita Chadha,</span><br>Idea Brewer<br><br>With a knack for creating beautiful spaces and bringing together the brightest of minds,Ankita is the perfect blend of a novelist, having written a novel, and an entrepreneur, having founded Mitti-Brewing Ideas, a cafe where the thinkers and doers collaborate and let their creative juices flow.
                                                                   </p>
                                                               </div>
                                                         </div>
                                                    </div>
-                                                   
-                                                   
                                                    
                                                 </div>
                                           </div>
@@ -800,6 +799,9 @@
         </div>              
     </div>
 </section>
+<!-- include footer -->
+<?php include 'footScript.php';?>
+  <?php include 'footer.php';?>  
 
 
 

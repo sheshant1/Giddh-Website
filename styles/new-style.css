@@ -2649,7 +2649,7 @@ figure.member{
   height:200px;
   overflow: hidden;
   display: inline-block;
-  margin-right:30px;
+  margin-right: 24.8px;
   margin-bottom:30px;
   position: relative;
   font-family: 'RobotoRegular';
@@ -2791,6 +2791,9 @@ figure.member:last-child span.empty{
 .m-t-70{
   margin-top:70px;
 }
+.m-t-60{
+  margin-top:60px;
+}
 
 .team-head span{
   width:80%;
@@ -2861,7 +2864,7 @@ body{
   background:url('../assets/images/our_principle/leads.jpg') 0 0 no-repeat;
 }
 .figure.bgConsult{
-  background:url('../assets/images/our_principle/consult.jpg') 0 0 no-repeat;
+  background:url('../assets/images/our_principle/consult.png') 0 0 no-repeat;
 }
 .figure.bgCouragious{
   background:url('../assets/images/our_principle/courageous.jpg') 0 0 no-repeat;
@@ -2873,7 +2876,7 @@ body{
   background:url('../assets/images/our_principle/servegood.jpg') 0 0 no-repeat;
 }
 .figure.bgDefine{
-  background:url('../assets/images/our_principle/createprocess.jpg') 0 0 no-repeat;
+  background:url('../assets/images/our_principle/createprocess.png') 0 0 no-repeat;
 }
 .figure.bgAdapts{
   background:url('../assets/images/our_principle/adapts.jpg') 0 0 no-repeat;
@@ -2898,9 +2901,9 @@ body{
   width: 80%;
 } */
 .figure .topSection{
-  padding:5px 26px 5px 26px;
+  padding:16px 26px 16px 26px;
   margin-top:60px;
-  background:rgba(17,17,17,0.4);
+  background:rgba(17,17,17,0.5);
   z-index: 2;
   width: 100%;
   z-index:2;
@@ -2918,7 +2921,7 @@ body{
   padding-right: 50px;
   display: inline-block;
   vertical-align: top;
-  padding: 26px 27px 26px 0;
+  padding: 20px 27px 20px 0;
   margin-bottom: 0;
   line-height: 35px;
   min-width:338px;
@@ -2933,7 +2936,7 @@ display: inline-block;
 margin-right:23px;
 }
 .figure .topSection p.left .heading{
-  font-size:26px;
+  font-size:25px;
   font-family: 'RobotoRegular';
   display: inline-block;
 }
