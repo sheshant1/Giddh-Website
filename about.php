@@ -702,7 +702,7 @@
                                                                </div>
                                                                <div class="col-sm-6">
                                                                   <p>
-                                                                        <span class="name">Puspendra Agrawal,</span><br> Idea Guy, Technology Geek<br><br>A calculated risk-taker with passion for everything numbers, Pushpendra is an IMT pass out, and the founder of Walkover. Over the years Pushpendra has perfected the art of crafting the most efficient code and believes apathy to be a man’s biggest foe and time to be his biggest ally.
+                                                                        <span class="name">Puspendra Agrawal,</span><br>Idea Guy, Technology Geek<br><br>A calculated risk-taker with passion for everything numbers, Pushpendra is an IMT pass out, and the founder of Walkover. Over the years Pushpendra has perfected the art of crafting the most efficient code and believes apathy to be a man’s biggest foe and time to be his biggest ally.
                                                                   </p>
                                                               </div>
                                                         </div>
@@ -711,8 +711,7 @@
                                                          <div class="row">
                                                                <div class="col-sm-6">
                                                                   <p class="left">
-                                                                  <span class="name">Ashish Yadav,</span><br>
-                                                                  Concept Creator<br><br>Ashish brings 10+ years of experience with himself in designing highly functional and intuitive applications. He believes Design to be the biggest ‘Weapon of Mass Inspiration’. As a Head of Design at Walkover, his work is grounded in his deep interest in how people connect through visual communication.
+                                                                  <span class="name">Ashish Yadav,</span><br>Concept Creator<br><br>Ashish brings 10+ years of experience with himself in designing highly functional and intuitive applications. He believes Design to be the biggest ‘Weapon of Mass Inspiration’. As a Head of Design at Walkover, his work is grounded in his deep interest in how people connect through visual communication.
                                                                   </p>
                                                               </div>
                                                               <div class="col-sm-6">
@@ -727,7 +726,7 @@
                                                                </div>
                                                                <div class="col-sm-6">
                                                                   <p>
-                                                                        <span class="name">Priyanka Pathak,</span><br> Technology Geek<br><br>With zeros and ones coursing through her brain and blood, Priyanka has more than 7 years of experience in application development with ThoughtWorks. One part idea brewer and one part geek, she is fondly known as the Black Widow of Walkover.
+                                                                        <span class="name">Priyanka Pathak,</span><br>Technology Geek<br><br>With zeros and ones coursing through her brain and blood, Priyanka has more than 7 years of experience in application development with ThoughtWorks. One part idea brewer and one part geek, she is fondly known as the Black Widow of Walkover.
                                                                   </p>
                                                               </div>
                                                         </div>
@@ -756,8 +755,6 @@
                                                               </div>
                                                         </div>
                                                    </div>
-                                                   
-                                                   
                                                    
                                                 </div>
                                           </div>
