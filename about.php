@@ -4,6 +4,7 @@
   
   <meta name="description" content="Giddh is Online Cloud Based GST ready accounting software & Bookkeeping software. Giddh accounting makes your data secure and available across globe. "/>
   <meta name="keywords" content="About Giddh"/>
+  <meta http-equiv=“Content-Type” content=“text/html; charset=utf-8">
   <title>Giddh ~ About Us</title>
   <?php include 'head.php';?>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
