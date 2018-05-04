@@ -24,40 +24,38 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-adaptToEvolve:before {
+  content: "\e912";
+}
+.icon-leadsByExample:before {
+  content: "\e913";
+}
 .icon-alwaysbefore:before {
   content: "\e900";
- 
 }
 .icon-custcome:before {
   content: "\e901";
 }
 .icon-peoplepower:before {
   content: "\e902";
-  
 }
 .icon-setbacks:before {
   content: "\e903";
-  
 }
 .icon-transparency:before {
   content: "\e904";
-  
 }
 .icon-settle:before {
   content: "\e905";
-  
 }
 .icon-empower:before {
   content: "\e906";
-  
 }
 .icon-focus:before {
   content: "\e907";
- 
 }
 .icon-impossible:before {
   content: "\e908";
- 
 }
 .icon-evolve:before {
   content: "\e909";
