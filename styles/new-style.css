@@ -2644,12 +2644,20 @@ button.toast-close-button {
   vertical-align: middle;
   float: left;
 }
+.list_team{
+  margin:0;
+  padding:0;
+}
+.list_team li{
+  display: inline-block;
+}
+
 figure.member{
   width:200px;
   height:200px;
   overflow: hidden;
   display: inline-block;
-  margin-right: 24.8px;
+  margin-right: 31px;
   margin-bottom:30px;
   position: relative;
   font-family: 'RobotoRegular';
@@ -2793,6 +2801,9 @@ figure.member:last-child span.empty{
 }
 .m-t-60{
   margin-top:60px;
+}
+.m-r-zero{
+  margin-right:0 !important;
 }
 
 .team-head span{
