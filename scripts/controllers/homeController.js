@@ -1,7 +1,7 @@
 (function() {
   'use strict';
   
-  function HomeController($scope, $rootScope, $http, $timeout, toastr) {
+  function HomeController($scope, $rootScope, $http, $timeout, toastr, $anchorScroll, $location) {
     var $this = this;
     this.selectedTab = 'about';
     this.videoObj = {
@@ -75,6 +75,11 @@
     //check null, empty or undefined
     this.isNullOrEmptyOrUndefined = function(value) {
       return !value
+    }
+
+    this.scrollToSection = function(hash) {
+      // $location.hash(hash);
+      $anchorScroll(hash);
     }
 
   };
