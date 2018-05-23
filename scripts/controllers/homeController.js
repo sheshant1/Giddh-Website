@@ -1,7 +1,7 @@
 (function() {
   'use strict';
   
-  function HomeController($scope, $rootScope, $http, $timeout, toastr, $anchorScroll, $location) {
+  function HomeController($scope, $rootScope, $http, $timeout, toastr, $anchorScroll, $location, $window) {
     var $this = this;
     this.selectedTab = 'about';
     this.videoObj = {
@@ -82,6 +82,17 @@
       $anchorScroll(hash);
     }
 
+
+    this.activeTeam = function() {
+      var tabName = $window.location.search.split('=');
+      if(tabName[1] === 'team') {
+        $('.about-content.tab-pane').removeClass('active');
+        $('#team').addClass('active');
+        this.selectedTab = 'team';
+      }
+    }
+
+    this.activeTeam();
   };
 
   angular.module('giddhWebsite').controller('homeController', HomeController);

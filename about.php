@@ -870,6 +870,7 @@
       $(window).trigger('resize');
       $(".navbar").removeClass('navbar-fixed-top')
     }
+
   </script>
   <script>
   $(document).ready(function(){
@@ -914,7 +915,7 @@ $("html, body").animate({ scrollTop: 0 }, 0);
   $(function() {
       
   $('.nav-tabs-values li a[href^="#"]').click(function() {
-        debugger;
+        // debugger;
     if  ((location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname)) {
       var target = $(this.hash);
       $("a.activeValue").removeClass("activeValue");
@@ -929,7 +930,7 @@ $("html, body").animate({ scrollTop: 0 }, 0);
     }
   });
   $('.nav-tab-principle li a[href^="#"]').click(function() {
-        debugger;
+        // debugger;
     if  ((location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname)) {
       var target = $(this.hash);
       $("a.activepr").removeClass("activepr");
