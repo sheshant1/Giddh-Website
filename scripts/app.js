@@ -101,8 +101,8 @@ function config(vcRecaptchaServiceProvider, $httpProvider, $authProvider, localS
 }
 
 //run block
-runBlock.$inject = ['$rootScope', '$window', '$http', 'localStorageService'];  //, '$q'
-function runBlock($rootScope, $window, $http, localStorageService) {     // $q,
+runBlock.$inject = ['$rootScope', '$window', '$http', 'localStorageService', '$anchorScroll'];  //, '$q'
+function runBlock($rootScope, $window, $http, localStorageService, $anchorScroll) {     // $q,
   $rootScope.magicLinkPage = false;
   $rootScope.whiteLinks = false;
   $rootScope.loginPage = false;
@@ -111,6 +111,7 @@ function runBlock($rootScope, $window, $http, localStorageService) {     // $q,
   $rootScope.showBlack = false;
   $rootScope.isNavCollapsed = true;
   $rootScope.isUae = false;
+  $anchorScroll.yOffset = 216;
   
   // ----------------------------------------------------------
 

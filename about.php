@@ -30,11 +30,11 @@
                             <div class="col-md-12">
                                           <div class="area-flex center">
                                           <ul class="nav nav-tabs nav-tabs-about" role="tablist">
-                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'about'}"><a href="javascript:void(0)" aria-controls="about" role="tab" data-toggle="tab" class="one" ng-click="vm.selectedTab = 'about'">About Us</a></li>
-                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'values'}"><a href="javascript:void(0)" aria-controls="profile" role="tab" data-toggle="tab" class="two" ng-click="vm.selectedTab = 'values'">Our Values</a></li>
-                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'principle'}"><a href="javascript:void(0)" aria-controls="principle" role="tab" data-toggle="tab" class="three" ng-click="vm.selectedTab = 'principle'">Leadership Principles</a></li>
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'about'}"><a href="javascript:void(0)" aria-controls="about" role="tab" data-toggle="tab"  ng-click="vm.selectedTab = 'about'">About Us</a></li>
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'values'}"><a href="javascript:void(0)" aria-controls="values" role="tab" data-toggle="tab"  ng-click="vm.selectedTab = 'values'">Our Values</a></li>
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'principle'}"><a href="javascript:void(0)" aria-controls="principle" role="tab" data-toggle="tab"  ng-click="vm.selectedTab = 'principle'">Leadership Principles</a></li>
 
-                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'team'}" ><a href="javascript:void(0)" aria-controls="settings" role="tab" data-toggle="tab" class="four" ng-click="vm.selectedTab = 'team'">The Team</a></li>
+                                                  <li role="presentation" ng-class="{'active':vm.selectedTab === 'team'}" ><a href="javascript:void(0)" aria-controls="settings" role="tab" data-toggle="tab"  ng-click="vm.selectedTab = 'team'">The Team</a></li>
                                               </ul>
 
                                         
@@ -124,55 +124,54 @@
                       </div>
                   </div>
                     <div class="about-content-body">
-                      <div class="about" id="about-company">
+                      <div class="about fixabout" id="about-company">
                                 <div class="container">
                                             <div class="tab-content">
                                                 <!-- start secondry tabs -->
                                                 <div>
                                                         <ul class="nav nav-tabs nav-tabs-values" role="tablist">
-                                                          <li role="presentation" class="active"><a href="#custComFirst" aria-controls="custComFirst" role="tab" data-toggle="tab">
+                                                          <li role="presentation"><a href="#custComFirst" aria-controls="custComFirst" data-toggle="tab" class="activeValue">
                                                            <span class="icon icon-custcome"></span>     
                                                           Customers Come First</a></li>
-                                                          <li role="presentation"><a href="#breakBound" aria-controls="breakBound" role="tab" data-toggle="tab">
+                                                          <li role="presentation"><a href="#breakBound" aria-controls="breakBound" data-toggle="tab">
                                                           <span class="icon icon-setbacks"></span>       
                                                           Setbacks to Break Boundaries</a></li>
-                                                          <li role="presentation"><a href="#impoGoals" aria-controls="impoGoals" role="tab" data-toggle="tab">
+                                                          <li role="presentation"><a href="#impoGoals" aria-controls="impoGoals" data-toggle="tab">
                                                           <span class="icon icon-impossible"></span> 
                                                           We Set Impossible Goals</a></li>
-                                                          <li role="presentation"><a href="#peoplePower" aria-controls="peoplePower" role="tab" data-toggle="tab">
+                                                          <li role="presentation"><a href="#peoplePower" aria-controls="peoplePower" data-toggle="tab">
                                                           <span class="icon icon-peoplepower"></span>     
                                                           People are our Power</a></li>
-                                                          <li role="presentation"><a href="#peopleFocus" aria-controls="peopleFocus" role="tab" data-toggle="tab">
+                                                          <li role="presentation"><a href="#peopleFocus" aria-controls="peopleFocus" data-toggle="tab">
                                                           <span class="icon icon-alwaysbefore"></span>      
                                                           We Focus on Why & How?</a></li>
-                                                          <li role="presentation"><a href="#alwaysBefore" aria-controls="alwaysBefore" role="tab" data-toggle="tab">
+                                                          <li role="presentation"><a href="#alwaysBefore" aria-controls="alwaysBefore" data-toggle="tab">
                                                           <span class="icon icon-focus"></span>          
                                                           Always We Before Me</a></li>
-                                                          <li role="presentation"><a href="#doNotSettle" aria-controls="doNotSettle" role="tab" data-toggle="tab">
+                                                          <li role="presentation"><a href="#doNotSettle" aria-controls="doNotSettle" data-toggle="tab">
                                                           <span class="icon icon-settle"></span>
                                                                 We Don’t Settle</a></li>
-                                                          <li role="presentation"><a href="#empowerFut" aria-controls="empowerFut" role="tab" data-toggle="tab">
+                                                          <li role="presentation"><a href="#empowerFut" aria-controls="empowerFut" data-toggle="tab">
                                                           <span class="icon icon-empower"></span>      
                                                           We Empower The Future</a></li>
-                                                          <li role="presentation"><a href="#transparency" aria-controls="transparency" role="tab" data-toggle="tab">
+                                                          <li role="presentation"><a href="#transparency" aria-controls="transparency" data-toggle="tab">
                                                           <span class="icon icon-transparency"></span>         
                                                           Transparency and Honesty</a></li>
-                                                        
                                                         </ul>
                                                 <!-- end secondry tabs -->
                                                   <div>
                                                   </div>
                                             </div>
                                 </div>
-                     </div>
-
+                       </div>
+                  </div>
                                 <!-- tab-content -->
-                     <div class="tab-content">
-                                      <div role="tabpanel" class="tab-pane active" id="custComFirst">
-                                        <div class="product values mt50">
+                     <div class="tab-content fixed-tab-content">
+                                      <div id="custComFirst">
+                                        <div class="product values bg-white">
                                           <div class="container">
                                             <div class="row">
-                                                  <div class="col-sm-12">
+                                            <div class="col-sm-12">
                                                         <h1>Customers Come First</h1>
                                                   </div>
                                                   <div class="col-sm-12">
@@ -185,11 +184,11 @@
                                           </div>
                                         </div>
                                       </div>
-                                    <div role="tabpanel" class="tab-pane" id="breakBound">
-                                          <div class="product values mt50">
+                                    <div id="breakBound" class="target">
+                                          <div class="product values bg-gray">
                                                 <div class="container">
                                                       <div class="row">
-                                                            <div class="col-sm-12">
+                                                      <div class="col-sm-12">
                                                                   <h1>Embracing Setbacks to Break Boundaries</h1>
                                                             </div>
                                                             <div class="col-sm-12">
@@ -203,11 +202,12 @@
                                           </div>
                                     </div>
                                   
-                                      <div role="tabpanel" class="tab-pane" id="impoGoals">
-                                            <div class="product values mt50">
+                                      <div id="impoGoals">
+                                            <div class="product values bg-white">
                                                 <div class="container">
                                                   <div class="row">
                                                         <div class="col-sm-12">
+                                                            
                                                               <h1>We Set Impossible Goals</h1>
                                                         </div>
                                                         <div class="col-sm-12">
@@ -220,11 +220,12 @@
                                                 </div>
                                               </div>
                                       </div>
-                                      <div role="tabpanel" class="tab-pane" id="peoplePower">
-                                            <div class="product values mt50">
+                                      <div id="peoplePower">
+                                            <div class="product values bg-gray">
                                                 <div class="container">
                                                   <div class="row">
                                                         <div class="col-sm-12">
+                                                       
                                                               <h1>People are our Power</h1>
                                                         </div>
                                                         <div class="col-sm-12">
@@ -238,11 +239,12 @@
                                                 </div>
                                               </div>
                                       </div>
-                                      <div role="tabpanel" class="tab-pane" id="peopleFocus">
-                                            <div class="product values mt50">
+                                      <div id="peopleFocus">
+                                            <div class="product values bg-white">
                                                 <div class="container">
                                                   <div class="row">
                                                         <div class="col-sm-12">
+                                                          
                                                               <h1>We Focus on ‘Why?’ & ‘How?’</h1>
                                                         </div>
                                                         <div class="col-sm-12">
@@ -256,11 +258,12 @@
                                                 </div>
                                               </div>
                                       </div>
-                                      <div role="tabpanel" class="tab-pane" id="alwaysBefore">
-                                              <div class="product values mt50">
+                                      <div id="alwaysBefore">
+                                              <div class="product values bg-gray">
                                                   <div class="container">
                                                     <div class="row">
                                                           <div class="col-sm-12">
+                                                           
                                                                 <h1>Always We Before Me</h1>
                                                           </div>
                                                           <div class="col-sm-12">
@@ -274,11 +277,12 @@
                                                   </div>
                                                 </div>
                                       </div>
-                                      <div role="tabpanel" class="tab-pane" id="doNotSettle">
-                                            <div class="product values mt50">
+                                      <div  id="doNotSettle">
+                                            <div class="product values bg-white">
                                                 <div class="container">
                                                   <div class="row">
                                                         <div class="col-sm-12">
+                                                            
                                                               <h1>We Don’t Settle</h1>
                                                         </div>
                                                         <div class="col-sm-12">
@@ -292,11 +296,12 @@
                                                 </div>
                                               </div>
                                       </div>
-                                      <div role="tabpanel" class="tab-pane" id="empowerFut">
-                                            <div class="product values mt50">
+                                      <div id="empowerFut">
+                                            <div class="product values bg-gray">
                                                 <div class="container">
                                                   <div class="row">
                                                         <div class="col-sm-12">
+                                                           
                                                               <h1>We Empower The Future</h1>
                                                         </div>
                                                         <div class="col-sm-12">
@@ -309,11 +314,12 @@
                                                 </div>
                                               </div>
                                       </div>
-                                      <div role="tabpanel" class="tab-pane" id="transparency">
-                                            <div class="product values mt50">
+                                      <div id="transparency">
+                                            <div class="product values bg-white">
                                                 <div class="container">
                                                   <div class="row">
                                                         <div class="col-sm-12">
+                                                            
                                                               <h1>Transparency and Honesty</h1>
                                                         </div>
                                                         <div class="col-sm-12">
@@ -331,7 +337,7 @@
                     
                   
                     </div>
-            </div>
+           
             <!-- our values end -->
 
               <!-- our principle start -->
@@ -343,14 +349,14 @@
                       </div>
                   </div>
                     <div class="about-content-body">
-                    <div class="about">
+                    <div class="about fixedprinciple">
                                 <div class="container">
                                             <div class="tab-content">
                                                 <!-- start secondry tabs -->
                                                 <div>
                                                       <ul class="nav nav-tabs nav-tabs-values  nav-tab-principle navs-principle">
-                                                            <li class="active">
-                                                                  <a href="#Nurture" data-toggle="tab">
+                                                            <li>
+                                                                  <a href="#Nurture" data-toggle="tab" class="activepr">
                                                                   <span class="icon icon-Nurtures"></span>
                                                                         Nurtures Collaboration</a>
                                                             </li>
@@ -365,7 +371,7 @@
                                                             Consults and Delegates</a></li>
                                                             <li><a href="#courageous" data-toggle="tab">
                                                             <span class="icon icon-Courageous"></span>
-                                                            Is Courageousn</a></li>
+                                                            Is Courageous</a></li>
                                                             <li><a href="#integrity" data-toggle="tab">
                                                             <span class="icon icon-integrity"></span>
                                                             Adds Integrity</a></li>
@@ -382,11 +388,13 @@
                                               </div>
                                            </div>
                                </div>
-                               <div class="container-fluid mt50">
+            </div>
+                               <div class="container-fluid fixedPrContainer">
                                     <div class="product p-t-0 p-b-0">
                                     <div class="row" id="Nurture">
                                           <div class="figure bgNurture">
                                                 <div class="container">
+                                              
                                                       <div class="topSection">
                                                                   <div class="container-principle">
                                                                         <p class="left">
@@ -547,7 +555,7 @@
                                </div>
                         </div>
               </div>
-              </div>
+            
             <!-- our principle end -->
               <!-- the team start    -->
                   <div class="about-content tab-pane" id="team" ng-class="{'active':vm.selectedTab == 'team'}">
@@ -563,114 +571,147 @@
                                     <div class="theTeam">
                                     <div class="container">
                                           <div class="row">
-                                                <div class="col-sm-3">
+                                                <div class="col-sm-12">
                                                       <h1 class="head-left">The Team</h1>
                                                 </div>
                                           </div>
                                           <div class="row">
                                                 <div class="col-sm-12">
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/alok.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Alok</span>
-                                                                 <span class="designation">Product Associate  </span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/gaurav.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Gaurav</span>
-                                                                 <span class="designation">Web Development Engineer</span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/nidhi.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Nidhi</span>
-                                                                 <span class="designation">Programmer & Database Architect</span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/mayank.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Mayank</span>
-                                                                 <span class="designation">Software Engineer</span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/sagar.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Sagar</span>
-                                                                 <span class="designation">QA Specialist</span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/mustafa.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Mustafa</span>
-                                                                 <span class="designation">UI/UX Designer and Developer</span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/aditya.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Aditya</span>
-                                                                 <span class="designation">Java Developer</span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/kunal.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Kunal</span>
-                                                                 <span class="designation">Full Stack Developer</span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/akshay.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Akshay</span>
-                                                                 <span class="designation">Software Engineer - Java Developer</span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/arpit.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Arpit</span>
-                                                                 <span class="designation">Full Stack Developer</span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/meghna.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Meghna</span>
-                                                                 <span class="designation">UI/UX Designer</span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/sheba.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Sheba</span>
-                                                                 <span class="designation">Inbound Sales Executive </span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/devendra.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Devendra</span>
-                                                                 <span class="designation">Sales Executive</span>
-                                                            </p>
-                                                     </figure>
-                                                     <figure class="member">
-                                                           <img src="../assets/images/team/pranay.png" alt="">
-                                                           <p class="member-footer">
-                                                                 <span class="name">Pranay</span>
-                                                                 <span class="designation">Sales Executive</span>
-                                                            </p>
-                                                     </figure>
+                                                <ul class="list_team">
+                                                            <li>
+                                                            <figure class="member">
+                                                                  <img src="../assets/images/team/alok.png" alt="">
+                                                                  <p class="member-footer">
+                                                                        <span class="name">Alok</span>
+                                                                        <span class="designation">Product Associate  </span>
+                                                                        </p>
+                                                            </figure>
+                                                            </li>
+                                                            <li>
+                                                                        <figure class="member">
+                                                                              <img src="../assets/images/team/gaurav.png" alt="">
+                                                                              <p class="member-footer">
+                                                                                    <span class="name">Gaurav</span>
+                                                                                    <span class="designation">Web Development Engineer</span>
+                                                                                    </p>
+                                                                        </figure>
+                                                            </li>
+                                                            <li>
+                                                                        <figure class="member">
+                                                                              <img src="../assets/images/team/nidhi.png" alt="">
+                                                                              <p class="member-footer">
+                                                                                    <span class="name">Nidhi</span>
+                                                                                    <span class="designation">Programmer & Database Architect</span>
+                                                                                    </p>
+                                                                        </figure>
+                                                            </li>
+                                                            <li>
+                                                                        <figure class="member">
+                                                                              <img src="../assets/images/team/mayank.png" alt="">
+                                                                              <p class="member-footer">
+                                                                                    <span class="name">Mayank</span>
+                                                                                    <span class="designation">Software Engineer</span>
+                                                                                    </p>
+                                                                        </figure>
+                                                            </li>
+                                                            <li>
+                                                                        <figure class="member m-r-zero">
+                                                                              <img src="../assets/images/team/sagar.png" alt="">
+                                                                              <p class="member-footer">
+                                                                                    <span class="name">Sagar</span>
+                                                                                    <span class="designation">QA Specialist</span>
+                                                                                    </p>
+                                                                        </figure>
+                                                            </li>
+                                                  
+                                                            <li>
+                                                                  <figure class="member">
+                                                                        <img src="../assets/images/team/mustafa.png" alt="">
+                                                                        <p class="member-footer">
+                                                                              <span class="name">Mustafa</span>
+                                                                              <span class="designation">UI/UX Designer and Developer</span>
+                                                                              </p>
+                                                                  </figure>
+                                                            </li>
+                                                            <li>
+                                                                  <figure class="member">
+                                                                        <img src="../assets/images/team/aditya.png" alt="">
+                                                                        <p class="member-footer">
+                                                                              <span class="name">Aditya</span>
+                                                                              <span class="designation">Java Developer</span>
+                                                                              </p>
+                                                                  </figure>
+                                                            </li>
+                                                            <li>
+                                                                  <figure class="member">
+                                                                        <img src="../assets/images/team/leena.png" alt="">
+                                                                        <p class="member-footer">
+                                                                              <span class="name">Leena</span>
+                                                                              <span class="designation">Full Stack Developer</span>
+                                                                              </p>
+                                                                  </figure>
+                                                            </li>
+                                                            <li>
+                                                                  <figure class="member">
+                                                                        <img src="../assets/images/team/arpit.png" alt="">
+                                                                        <p class="member-footer">
+                                                                              <span class="name">Arpit</span>
+                                                                              <span class="designation">Full Stack Developer</span>
+                                                                              </p>
+                                                                  </figure>
+                                                            </li>
                                                    
-                                                     <figure class="member">
-                                                           <a href="https://www.walkover.in/career.php" target="_blank" class="empty-link"><span class="empty">Interested to <br>join our<br> team.</span></a>
-                                                     </figure>
+                                                            <li>
+                                                                  <figure class="member m-r-zero">
+                                                                        <img src="../assets/images/team/meghna.png" alt="">
+                                                                        <p class="member-footer">
+                                                                              <span class="name">Meghna</span>
+                                                                              <span class="designation">UI/UX Designer</span>
+                                                                              </p>
+                                                                  </figure>
+                                                            </li>
+                                                            <li>
+                                                                  <figure class="member">
+                                                                        <img src="../assets/images/team/sheba.png" alt="">
+                                                                        <p class="member-footer">
+                                                                              <span class="name">Sheba</span>
+                                                                              <span class="designation">Inbound Sales Executive </span>
+                                                                              </p>
+                                                                  </figure>
+                                                            </li>
+                                                            <li>
+                                                                  <figure class="member">
+                                                                        <img src="../assets/images/team/devendra.png" alt="">
+                                                                        <p class="member-footer">
+                                                                              <span class="name">Devendra</span>
+                                                                              <span class="designation">Sales Executive</span>
+                                                                              </p>
+                                                                  </figure>
+                                                            </li>
+                                                            <li>
+                                                                  <figure class="member">
+                                                                        <img src="../assets/images/team/pranay.png" alt="">
+                                                                        <p class="member-footer">
+                                                                              <span class="name">Pranay</span>
+                                                                              <span class="designation">Sales Executive</span>
+                                                                              </p>
+                                                                  </figure>
+                                                            </li>
+                                                            <li>
+                                                                  <figure class="member">
+                                                                        <img src="../assets/images/team/jinesh.png" alt="">
+                                                                        <p class="member-footer">
+                                                                              <span class="name">Jinesh</span>
+                                                                              <span class="designation">Content Writer</span>
+                                                                              </p>
+                                                                  </figure>
+                                                            </li>
+                                                            <li>
+                                                                  <figure class="member m-r-zero">
+                                                                        <a href="https://www.walkover.in/career.php" target="_blank" class="empty-link"><span class="empty">Interested to <br>join our<br> team.</span></a>
+                                                                  </figure>
+                                                            </li>
+                                                     </ul>
                                                 </div>
                                           </div>
                                     </div>
@@ -711,13 +752,13 @@
                                                         </div>
                                                    </div>
                                                    <div class="mentors-info m-t-70">
-                                                         <div class="row">
-                                                               <div class="col-sm-6">
+                                                         <div class="row res-flex">
+                                                               <div class="col-sm-6 res-second">
                                                                   <p class="left">
                                                                   <span class="name">Ashish Yadav,</span><br>Concept Creator<br><br>Ashish brings 10+ years of experience with himself in designing highly functional and intuitive applications. He believes Design to be the biggest ‘Weapon of Mass Inspiration’. As a Head of Design at Walkover, his work is grounded in his deep interest in how people connect through visual communication.
                                                                   </p>
                                                               </div>
-                                                              <div class="col-sm-6">
+                                                              <div class="col-sm-6 res-first">
                                                                         <img src="/assets/images/team/aashish-big.png" alt="" class="pull-right"> 
                                                                </div>
                                                         </div>
@@ -735,14 +776,14 @@
                                                         </div>
                                                    </div>
                                                    <div class="mentors-info m-t-70">
-                                                         <div class="row">
-                                                               <div class="col-sm-6">
+                                                         <div class="row res-flex">
+                                                               <div class="col-sm-6 res-second">
                                                                   <p class="left">
                                                                         <span class="name">Ravindra Dangi,</span><br>Sales Samurai<br><br>Ravindra, the Director of Sales at MSG91, is a conversational samurai with half a decade worth of experience in sales. Unlike any other sales guy Ravindra loves to be on the phone. He believes the secret to his success in sales is treating clients like his girlfriends, and his girlfriends like clients!
                                                                         
                                                                   </p>
                                                               </div>
-                                                              <div class="col-sm-6">
+                                                              <div class="col-sm-6 res-first">
                                                                         <img src="/assets/images/team/ravindra-big.png" alt="" class="pull-right"> 
                                                                </div>
                                                         </div>
@@ -829,19 +870,39 @@
       $(window).trigger('resize');
       $(".navbar").removeClass('navbar-fixed-top')
     }
+
   </script>
   <script>
   $(document).ready(function(){
         
 //  
 $("html, body").animate({ scrollTop: 0 }, "slow");
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= 362) {
+    $('.fixabout').addClass('fixed');
+    $('#custComFirst').css('margin-top', '215px');
+   }
+   else {
+    $('.about').removeClass('fixed');
+    $('#custComFirst').css('margin-top', '0');
+   }
 });
-$(".nav-tabs-values li a").click(function(e){
-      e.preventDefault();     
-      $('html, body').animate({
-        scrollTop: $("#about-company").offset().top
-      }, 0);
-})
+
+$(window).scroll(function(){
+  if ($(window).scrollTop() >= 380) {
+    $('.fixedprinciple').addClass('fixed');
+    $('.bgNurture').css('margin-top', '215px');
+   }
+   else {
+    $('.fixedprinciple').removeClass('fixed');
+    $('.bgNurture').css('margin-top', '0');
+   }
+});
+
+
+
+});
+
 
 $('.nav-tabs-footer li a').click(function(){
          
@@ -851,46 +912,39 @@ $("html, body").animate({ scrollTop: 0 }, 0);
 });
 
 
-
-
-
-//smooth scrolling
-// Select all links with hashes
-$('.nav-tab-principle li a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
+  $(function() {
+      
+  $('.nav-tabs-values li a[href^="#"]').click(function() {
+        // debugger;
+    if  ((location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname)) {
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
+      $("a.activeValue").removeClass("activeValue");
+      $(this).addClass("activeValue");
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
+        $('html,body').animate({
+          scrollTop: target.offset().top - 200 //offsets for fixed header
+        }, 800);
+        return false;
       }
     }
   });
+  $('.nav-tab-principle li a[href^="#"]').click(function() {
+        // debugger;
+    if  ((location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname)) {
+      var target = $(this.hash);
+      $("a.activepr").removeClass("activepr");
+      $(this).addClass("activepr");
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 200 //offsets for fixed header
+        }, 800);
+        return false;
+      }
+    }
+  });
+});
 </script>
 
 

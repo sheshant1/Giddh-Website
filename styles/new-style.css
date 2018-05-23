@@ -2320,7 +2320,7 @@ button.toast-close-button {
 
 .nav-tabs-values{
   border-bottom:none !important;
-  padding:51px 0 0 0;
+  padding:51px 0 51px 0;
 }
 .nav-tabs-values li a:focus{
   background:transparent !important;
@@ -2495,6 +2495,7 @@ button.toast-close-button {
   color:#26263A;
   line-height:31px;
   text-align: justify;
+  /* padding-bottom:70px; */
 }
 .about-content-body .head-left:after{
   left:0;
@@ -2511,7 +2512,7 @@ button.toast-close-button {
   text-decoration: underline;
 }
 .about-content-body .product{
-  background: #FFF;
+  /* background: #FFF; */
   padding:80px 0 125px 0;
   font-family: 'RobotoRegular';
 }
@@ -2644,12 +2645,20 @@ button.toast-close-button {
   vertical-align: middle;
   float: left;
 }
+.list_team{
+  margin:0;
+  padding:0;
+}
+.list_team li{
+  display: inline-block;
+}
+
 figure.member{
   width:200px;
   height:200px;
   overflow: hidden;
   display: inline-block;
-  margin-right: 24.8px;
+  margin-right: 31px;
   margin-bottom:30px;
   position: relative;
   font-family: 'RobotoRegular';
@@ -2750,6 +2759,7 @@ figure.member:last-child span.empty{
   height:170px;
   float:right;
   margin-top:-20px;
+  margin-right:85px;
 }
 .about-content-body .values {
   padding:90px 0;
@@ -2794,6 +2804,12 @@ figure.member:last-child span.empty{
 .m-t-60{
   margin-top:60px;
 }
+.m-t-263{
+  margin-top:263px;
+}
+.m-r-zero{
+  margin-right:0 !important;
+}
 
 .team-head span{
   width:80%;
@@ -2812,6 +2828,19 @@ figure.member:last-child span.empty{
 .mt60{
   margin-top:60px;
 }
+.fixabout.fixed, .fixedprinciple.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.fixed-tab-content .active{
+  /* padding-top:216px; */
+}
+
+
+
 
 
 @media only screen and (max-width:768px){
@@ -2840,7 +2869,7 @@ body{
 }
 .figure{
   width: 100%;
-  height: 630px;
+  height: 627px;
   display: block;
   position: relative;
   background-size:100% 100% !important;
@@ -2977,7 +3006,16 @@ margin-right:23px;
 .nav-tabs-footer > li.remove a{
   border-bottom:transparent !important;
 }
-.nav-tabs-values li.active a span, .navs-principle li.active a span {
+.navs-principle a.activepr span {
+  background: rgba(227, 75, 38, 0.6)  !important;
+  color: #fff !important;
+}
+.nav-tabs-values li a.activeValue  span{
+  background: rgba(227, 75, 38, 0.6)  !important;
+  color: #fff !important;
+}
+
+.nav-tabs-values a.active span, .navs-principle a.active span {
   background: rgba(227, 75, 38, 0.6)  !important;
   color: #fff !important;
 }
@@ -2996,10 +3034,55 @@ margin-right:23px;
   padding:0 4px !important;
   min-width:104px;
 }
+.tab-content div:focus{
+  outline:none;
+  }
+  .bg-white{
+    background: #FFF;
+  }
+  .bg-gray{
+    background: #F3F3F3;
+  }
+  .container{
+    position: relative;
+  }
+  .backToTop{
+    color:#1145BE !important;
+    font-size: 16px !important;
+    text-decoration: none !important;
+    position: absolute;
+    top:-70px;
+    right:0;
+  }
+  .backToTop.principle{
+    top: 10px;
+    right: 15px;
+}
+  
+  .circle-blue{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #1145BE;
+    display: inline-block;
+    line-height: 14px;
+    text-align: center;
+    color:#fff;
+    margin-right:8px;
+  }
+  .circle-blue .icon-Arrow-top{
+    font-size: 10px;
+  }
+
 
 @media only screen and (max-width:1367px){
   .figure .topSection p.right{
   font-size:17px;
+  }
+}
+@media only screen and (max-width:1200px){
+  .m-r-zero{
+    margin-right:31px !important;
   }
 }
 @media only screen and (max-width:900px){
@@ -3048,6 +3131,9 @@ margin-right:23px;
     float: none !important;
     margin-top:10px;
   }
+  .about-content-body .product h1{
+    text-align: left;
+  }
   .about-content-body .product h1:after{
     background:none;
   }
@@ -3055,9 +3141,9 @@ margin-right:23px;
     width:100%;
     text-align: justify;
   }
-  .about-content-body .product{
+  /* .about-content-body .product{
     margin-top:60px;
-  }
+  } */
   .product-info{
     margin-bottom:0 !important;
   }
@@ -3071,6 +3157,7 @@ margin-right:23px;
   .customer-big{
     float: left;
     margin-top: 40px;
+    margin-right:0;
   }
   .container-principle{
     display: block;
@@ -3129,7 +3216,30 @@ margin-right:23px;
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
+  .res-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .res-flex .res-first{
+    order:1;
+    -webkit-order:1;
+  }
+  .res-flex .res-second{
+    order:2;
+    -webkit-order:2;
+  }
 }
+@media only screen and (max-width:468px){
+  .list_team{
+    text-align: center;
+  }
+  .list_team li figure{
+    margin-right:0 !important;
+  }
+  
+}
+
+
 
 @media only screen and (min-width:1000px) and (max-width:1367px){
   .figure .topSection{
@@ -3137,4 +3247,5 @@ margin-right:23px;
     width: 100%;
 }
 }
+
 
