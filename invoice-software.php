@@ -1,10 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="en" ng-app="giddhWebsite">
 <head>
-  <meta name="description" content="Giddh GST accounting software simplifies the filing of GST return online. Enjoy automated filing with details like GST return form, tax invoice & GST online payments. Simple and easy to use, GST billing software and gst return software help to manage businesses smartly. No need to download! Try it for free today! "/>
-  <meta name="keywords" content="bookkeeping software, Accounting softwares, online accounting software, bookkeeping software for small business"/>
-  
-  <title>Online GST Return Filing Automation | Best GST Accounting Software India</title>
+  <meta name="description" content="Forget about the painful and tedious ways to create custom invoice. Giddh offers the best accounting software to create your own invoice online easily for small businesses. You can create invoice bill online anytime and anywhere. 24/7 Customer Support! Start your free trial today!"/>
+ 
+  <title>Create Invoice Online | Create Custom Billing Invoice Software - Giddh.com</title>
 
   <?php include 'head.php';?>
 
