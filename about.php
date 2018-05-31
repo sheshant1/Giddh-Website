@@ -723,7 +723,7 @@
                                                                         <h1 class="head-left">Founder</h1>
                                                                         <p>
                                                                               <span class="name">Shubhendra Agrawal,</span><br>
-                                                                              Founder, Tech Visionary<br><br>Shubhendra Agrawal is the founder of Giddh. An entrepreneur at heart and an engineer by choice, he founded Giddh in 2016 with the idea of unifying accounting with automation. Prior to Giddh, Shubhendra was the co-founder and CFO of MSG91, one of India’s top 5 messaging solutions firm.<br><br>
+                                                                              Founder, Tech Visionary<br><br>Shubhendra Agrawal is the founder of Giddh. An entrepreneur at heart and an engineer by choice, he founded Giddh in 2016 with the idea of unifying accounting with automation. Prior to Giddh, Shubhendra was the co-founder and CFO of MSG91, one of India’s top 5 messaging solutions firm.<br><br>
                                                                               With experience lasting over a decade in engineering, he has been a keen analyser of consumer behavior helping him cultivate a team that creates simple yet highly functional IT products.
                                                                         </p>
                                                                   </div>
@@ -746,7 +746,7 @@
                                                                </div>
                                                                <div class="col-sm-6">
                                                                   <p>
-                                                                        <span class="name">Puspendra Agrawal,</span><br>Idea Guy, Technology Geek<br><br>A calculated risk-taker with passion for everything numbers, Pushpendra is an IMT pass out, and the founder of Walkover. Over the years Pushpendra has perfected the art of crafting the most efficient code and believes apathy to be a man’s biggest foe and time to be his biggest ally.
+                                                                        <span class="name">Pushpendra Agrawal,</span><br>Idea Guy, Technology Geek<br><br>A calculated risk-taker with passion for everything numbers, Pushpendra is an IMT pass out, and the founder of Walkover. Over the years Pushpendra has perfected the art of crafting the most efficient code and believes apathy to be a man’s biggest foe and time to be his biggest ally.
                                                                   </p>
                                                               </div>
                                                         </div>
@@ -755,7 +755,7 @@
                                                          <div class="row res-flex">
                                                                <div class="col-sm-6 res-second">
                                                                   <p class="left">
-                                                                  <span class="name">Ashish Yadav,</span><br>Concept Creator<br><br>Ashish brings 10+ years of experience with himself in designing highly functional and intuitive applications. He believes Design to be the biggest ‘Weapon of Mass Inspiration’. As a Head of Design at Walkover, his work is grounded in his deep interest in how people connect through visual communication.
+                                                                  <span class="name">Ashish Yadav,</span><br>Concept Creator<br><br>Ashish brings 10+ years of experience with himself in designing highly functional and intuitive applications. He believes Design to be the biggest ‘Weapon of Mass Inspiration’. As a Head of Design at Walkover, his work is grounded in his deep interest in how people connect through visual communication.
                                                                   </p>
                                                               </div>
                                                               <div class="col-sm-6 res-first">
@@ -770,7 +770,7 @@
                                                                </div>
                                                                <div class="col-sm-6">
                                                                   <p>
-                                                                        <span class="name">Priyanka Pathak,</span><br>Technology Geek<br><br>With zeros and ones coursing through her brain and blood, Priyanka has more than 7 years of experience in application development with ThoughtWorks. One part idea brewer and one part geek, she is fondly known as the Black Widow of Walkover.
+                                                                        <span class="name">Priyanka Pathak,</span><br>Technology Geek<br><br>With zeros and ones coursing through her brain and blood, Priyanka has more than 7 years of experience in application development with ThoughtWorks. One part idea brewer and one part geek, she is fondly known as the Black Widow of Walkover.
                                                                   </p>
                                                               </div>
                                                         </div>
@@ -779,7 +779,7 @@
                                                          <div class="row res-flex">
                                                                <div class="col-sm-6 res-second">
                                                                   <p class="left">
-                                                                        <span class="name">Ravindra Dangi,</span><br>Sales Samurai<br><br>Ravindra, the Director of Sales at MSG91, is a conversational samurai with half a decade worth of experience in sales. Unlike any other sales guy Ravindra loves to be on the phone. He believes the secret to his success in sales is treating clients like his girlfriends, and his girlfriends like clients!
+                                                                        <span class="name">Ravindra Dangi,</span><br>Sales Samurai<br><br>Ravindra, the Director of Sales at MSG91, is a conversational samurai with half a decade worth of experience in sales. Unlike any other sales guy Ravindra loves to be on the phone. He believes the secret to his success in sales is treating clients like his girlfriends, and his girlfriends like clients!
                                                                         
                                                                   </p>
                                                               </div>
@@ -795,7 +795,7 @@
                                                                </div>
                                                                <div class="col-sm-6">
                                                                   <p> 
-                                                                        <span class="name">Ankita Chadha,</span><br>Idea Brewer<br><br>With a knack for creating beautiful spaces and bringing together the brightest of minds,Ankita is the perfect blend of a novelist, having written a novel, and an entrepreneur, having founded Mitti-Brewing Ideas, a cafe where the thinkers and doers collaborate and let their creative juices flow.
+                                                                        <span class="name">Ankita Chadha,</span><br>Idea Brewer<br><br>With a knack for creating beautiful spaces and bringing together the brightest of minds,Ankita is the perfect blend of a novelist, having written a novel, and an entrepreneur, having founded Mitti-Brewing Ideas, a cafe where the thinkers and doers collaborate and let their creative juices flow.
                                                                   </p>
                                                               </div>
                                                         </div>

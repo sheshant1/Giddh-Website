@@ -27,7 +27,7 @@
 <div id="gstBanner" class="ylwBg gridBg">
     <div class="container text-center">
     	<img src="/assets/images/new/invoice-banner.png" class="img-responsive"/>
-        <h3>Our Invoice Software</h3>
+        <h3>Invoice Software</h3>
     </div>
 </div>
 <!--//Banner-->
@@ -37,9 +37,10 @@
     <div class="container text-center">
     
     
-    	 <a class="trBox" href="signup.php"><span>Try </span><img src="/assets/images/new/giddh-logo-white.png"/></a>	
         <h3>Save Time with Invoicing Solutions</h3>
-        <p>Giddh makes the dull job of creating invoices so simple, you'll be amazed how much time you can save to focus on your core business activities. With its beautiful templates and customization options, Giddh is the best invoicing partner for all kinds of business owners</p><br>
+        <p>Giddh makes the dull job of creating invoices so simple, you'll be amazed how much time you can save to focus on your core business activities. With its beautiful templates and customization options, Giddh is the best invoicing partner for all kinds of business owners</p>
+       <a class="trBox" href="signup.php"><span>Try </span><img src="/assets/images/new/giddh-logo-white.png"/></a> 
+
         
        
     </div>
